@@ -1,9 +1,47 @@
-.big-red {
-  font-size: 48px;
-  color: red;
+.page {
+  background-color: white;
+  margin: 28px 42px;
+  padding: 82px 70px;
+  border-radius: 6px;
 }
 
-.little-black {
-  font-size: 10px;
-  color: black;
+.title {
+  font-size: 24pt;
+  margin-bottom: 65px;
+  color: #2C4059;
+}
+
+.section-title {
+  margin-bottom: 32px;
+  color: #2C4059;
+  opacity: 0.6;
+}
+
+.section {
+  background-color: #fafbfc;
+  padding: 32px 30px;
+  margin-bottom: 42px;
+  border-radius: 6px;
+  border: 1px solid #808c9b;
+}
+
+.style-card-row {
+  display: flex;
+}
+
+.style-card {
+  margin-right: 32px;
+}
+
+.style-name {
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: 600;
+  color: #2C4059;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.style-attributes {
+  font-size: 8pt;
 }
