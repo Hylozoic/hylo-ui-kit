@@ -1,6 +1,26 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-column {
+  margin-right: 25px;
+}
+
+.flex-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+}
+
 .page {
   background-color: white;
-  margin: 28px 42px;
+  margin: 28px 50px;
   padding: 82px 70px;
   border-radius: 6px;
 }
@@ -25,24 +45,17 @@
   border: 1px solid #808c9b;
 }
 
-.style-card-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.style-card-row:last-child .style-card {
-  border-bottom: none;
+.no-border {
+  border-bottom: none !important;
 }
 
 .style-card {
+  composes: flex-item;
+
   margin-top: 32px;
   margin-right: 80px;
   min-width: 0;
   width: auto;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 100px;
-  min-height: 200px;
   border-bottom: 1px solid #a0acbb;
 }
 
@@ -62,10 +75,10 @@
 }
 
 .style-example-header {
-  margin-top: 35px;
+  margin: 35px 0;
 }
 
 .style-example-body {
-  margin-top: 25px;
+  margin: 25px 0;
   max-width: 300px;
 }

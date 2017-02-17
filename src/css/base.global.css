@@ -10,6 +10,7 @@
   --color-rhino-50: color(var(--color-rhino) a(50%));
   --color-rhino-30: color(var(--color-rhino) a(30%));
   --color-rhino-darker: #2C405A;
+  --color-nepal: #8DABC4;
   /* */
   --color-white: #FFFFFF;
   --color-athens-gray: #FAFBFC;
@@ -119,7 +120,7 @@
   line-height: 22pt;
 }
 
-.caption-drk-lg{
+.caption-drk-lg {
   font-family: var(--font-family-regular);
   color: var(--color-rhino-80);
   font-size: 14pt;
@@ -139,9 +140,11 @@
 
 .tag {
   font-family: var(--font-family-bold);
+  color: var(--color-nepal);
   font-size: 10pt;
   letter-spacing: 0.6;
   line-height: 14pt;
+  text-transform: uppercase;
 }
 
 .button {

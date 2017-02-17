@@ -7,7 +7,7 @@ function Typography (props) {
     <div styleName='title'>Typography</div>
     <div styleName='section-title'>Headers</div>
     <div styleName='section'>
-      <div styleName='style-card-row'>
+      <div styleName='row'>
         <div styleName='style-card'>
           <div styleName='style-name'>
             .h-display
@@ -31,8 +31,8 @@ function Typography (props) {
           </div>
         </div>
       </div>
-      <div styleName='style-card-row' className='no-bottom-border'>
-        <div styleName='style-card'>
+      <div styleName='row'>
+        <div styleName='style-card no-border'>
           <div styleName='style-name'>
             .h-headline, h1
           </div>
@@ -43,7 +43,7 @@ function Typography (props) {
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
-        <div styleName='style-card'>
+        <div styleName='style-card no-border'>
           <div styleName='style-name'>
             .h-minor, h3
           </div>
@@ -58,7 +58,7 @@ function Typography (props) {
     </div>
     <div styleName='section-title'>Body Styles</div>
     <div styleName='section'>
-      <div styleName='style-card-row'>
+      <div styleName='row'>
         <div styleName='style-card'>
           <div styleName='style-name'>
             .body-drk-lg
@@ -67,7 +67,7 @@ function Typography (props) {
             Circular Book / 18pt, 0 ch, 24 line / Color: 2C4059 80%
           </div>
           <div styleName='style-example-body' className='body-drk-lg'>
-            Apparently we had reached a great height in atmosphere, for the sky was a dead black.
+            Apparently we had reached a great height in the atmosphere, for the sky was a dead black.
           </div>
         </div>
         <div styleName='style-card'>
@@ -78,12 +78,12 @@ function Typography (props) {
             Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 80%
           </div>
           <div styleName='style-example-body' className='body-drk-sm'>
-            Apparently we had reached a great height in atmosphere, for the sky was a dead black.
+            Apparently we had reached a great height in the atmosphere, for the sky was a dead black.
           </div>
         </div>
       </div>
-      <div styleName='style-card-row'>
-        <div styleName='style-card'>
+      <div styleName='row'>
+        <div styleName='style-card no-border'>
           <div styleName='style-name'>
             .body-lt-lg
           </div>
@@ -91,10 +91,10 @@ function Typography (props) {
             Circular Book / 17pt, 0 ch, 25 line / Color: 2C4059 60%
           </div>
           <div styleName='style-example-body' className='body-lt-lg'>
-            Apparently we had reached a great height in atmosphere, for the sky was a dead black.
+            Apparently we had reached a great height in the atmosphere, for the sky was a dead black.
           </div>
         </div>
-        <div styleName='style-card'>
+        <div styleName='style-card no-border'>
           <div styleName='style-name'>
             .body-lt-sm
           </div>
@@ -102,7 +102,101 @@ function Typography (props) {
             Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 60%
           </div>
           <div styleName='style-example-body' className='body-lt-sm'>
-            Apparently we had reached a great height in atmosphere, for the sky was a dead black.
+            Apparently we had reached a great height in the atmosphere, for the sky was a dead black.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div styleName='row'>
+      <div styleName='section-title flex-item left-column'>Captions & Tags</div>
+      <div styleName='section-title flex-item'>Buttons</div>
+    </div>
+    <div styleName='row'>
+      <div styleName='column flex-item left-column'>
+        <div styleName='section'>
+          <div styleName='style-card'>
+            <div styleName='style-name'>
+              Caption 13pt - Black
+            </div>
+            <div styleName='style-attributes'>
+              Circular Book / 14pt, 0 ch, 18 line / Color: 2C4059 80%
+            </div>
+            <div styleName='style-example-header' className='caption-drk-lg'>
+              Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+            </div>
+          </div>
+          <div styleName='style-card'>
+            <div styleName='style-name'>
+              Caption 13pt - Grey
+            </div>
+            <div styleName='style-attributes'>
+              Circular Book / 13pt, 0 ch, 19 line / Color: 2C4059 60%
+            </div>
+            <div styleName='style-example-header' className='caption-lt-lg'>
+              Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+            </div>
+          </div>
+          <div styleName='style-card no-border'>
+            <div styleName='style-name'>
+              Tag
+            </div>
+            <div styleName='style-attributes'>
+              Circular Bold / 10pt, 0.6 ch, 14 line / Color: 8DABC4;
+            </div>
+            <div styleName='style-example-body' className='tag'>
+              DASHBOARDS
+            </div>
+          </div>
+        </div>
+      </div>
+      <div styleName='column-flex-item'>
+        <div styleName='section'>
+          <div styleName='style-card'>
+            <div styleName='style-name'>
+              Button - Regular
+            </div>
+            <div styleName='style-attributes'>
+              Circular Medium / 16pt, 0 ch, 20 line / Color: 0DC3A0
+            </div>
+            <div styleName='style-example-body' className='button'>
+              Save changes
+            </div>
+          </div>
+          <div styleName='style-card no-border'>
+            <div styleName='style-name'>
+              Button - Small
+            </div>
+            <div styleName='style-attributes'>
+              Circular Bold / 10pt, 0.6 ch, 14 line / Color: 0DC3A0
+            </div>
+            <div styleName='style-example-body' className='button-sm'>
+              Learn more
+            </div>
+          </div>
+        </div>
+        <div styleName='section-title'>Other</div>
+        <div styleName='section'>
+          <div styleName='style-card'>
+            <div styleName='style-name'>
+              User Name - Cards
+            </div>
+            <div styleName='style-attributes'>
+              Circular Bold / 14pt, 0 ch, 20 line / Color: 2C4059
+            </div>
+            <div styleName='style-example-body' className='cards'>
+              Steven Pham
+            </div>
+          </div>
+          <div styleName='style-card no-border'>
+            <div styleName='style-name'>
+              Timestamp
+            </div>
+            <div styleName='style-attributes'>
+              Circular Book / 13pt, 0 ch, 16 line / Color: 2C4059 60%
+            </div>
+            <div styleName='style-example-body' className='timestamp'>
+              6 days ago
+            </div>
           </div>
         </div>
       </div>
@@ -110,4 +204,4 @@ function Typography (props) {
   </div>
 }
 
-export default CSSModules(Typography, styles)
+export default CSSModules(Typography, styles, {allowMultiple: true})
