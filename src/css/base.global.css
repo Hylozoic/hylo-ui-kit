@@ -1,19 +1,4 @@
-@import 'normalize.css';
-
-@font-face {
-  font-family: "Circular Book";
-  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
-}
-
-@font-face {
-  font-family: "Circular Medium";
-  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
-}
-
-@font-face {
-  font-family: "Circular Bold";
-  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
-}
+/*@import 'normalize.css';*/
 
 /* http://chir.ag/projects/name-that-color */
 /* http://chir.ag/projects/ntc/ */
@@ -49,6 +34,21 @@
   --font-family-regular: 'Circular Book';
   --font-family-medium: 'Circular Medium';
   --font-family-bold: 'Circular Bold';
+}
+
+@font-face {
+  font-family: "Circular Book";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+@font-face {
+  font-family: "Circular Medium";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+@font-face {
+  font-family: "Circular Bold";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
 }
 
 .h-display {
