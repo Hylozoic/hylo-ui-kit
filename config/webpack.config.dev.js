@@ -128,14 +128,6 @@ module.exports = {
           cacheDirectory: true
         }
       },
-      // For CSS files wit the *.global.css extension
-      {
-        test: /\.global\.s?css$/,
-        loaders: [
-          'style?sourceMap',
-          'css?importLoaders=1!postcss'
-        ]
-      },
       // Use CSS modules for all CSS files without the *.global.css extension
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.
@@ -145,7 +137,6 @@ module.exports = {
       // RFC: replaced the default for react css-modules, as per https://github.com/gajus/react-css-modules
       {
         test: /\.css$/,
-        // exclude: /\.global\.css$/,
         loaders: [
           'style?sourceMap',
           'css?modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]!postcss'

@@ -1,0 +1,31 @@
+:root {
+  /* Colors
+     For now standardized on using "Name that Color" naming:
+     http://chir.ag/projects/name-that-color http://chir.ag/projects/ntc/
+  */
+  --color-rhino: #2C4059;
+  --color-rhino-80: color(var(--color-rhino) a(80%));
+  --color-rhino-60: color(var(--color-rhino) a(60%));
+  --color-rhino-50: color(var(--color-rhino) a(50%));
+  --color-rhino-30: color(var(--color-rhino) a(30%));
+  --color-rhino-darker: #2C405A;
+  /* */
+  --color-white: #FFFFFF;
+  --color-athens-gray: #FAFBFC;
+  /* */
+  --color-caribbean-green: #0DC3A0;
+  --color-medium-purple: #9883E5;
+  --color-fuchsia-pink: #BB60A8;
+  --color-picton-blue: #40A1DD;
+  --color-persimmon: #FE6848;
+  /* */
+  --color-iceberg: #CFF3EC;
+  --color-moon-raker: #EAE6FA;
+  --color-prim: #F1DFEE;
+  --color-link-water: #D9ECF8;
+  --color-peach-schnapps: #FFE1DA;
+  /* */
+  --color-mountain-meadow: #23CC80;
+  --color-amaranth: #EE4266;
+  --color-yello-orange: #FFB949;
+}

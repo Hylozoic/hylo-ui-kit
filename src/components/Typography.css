@@ -1,4 +1,5 @@
-@import '../css/base.global.css';
+@import '../css/hylo-app/typography.css';
+@import '../css/hylo-app/colors.css';
 
 .page {
   background-color: var(--color-white);
