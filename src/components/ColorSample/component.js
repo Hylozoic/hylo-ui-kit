@@ -1,9 +1,7 @@
 import React from 'react'
-import styles from './ColorSample.css'
 const { string } = React.PropTypes
-import CSSModules from 'react-css-modules'
 
-function ColorSample ({ color, opacity = 1, textColor = '#FFF', borderColor, description }) {
+export default function ColorSample ({ color, opacity = 1, textColor = '#FFF', borderColor, description }) {
   const label = opacity !== 1 ? `${opacity * 100}%` : color
 
   const circleStyle = {
@@ -35,5 +33,3 @@ ColorSample.propTypes = {
   borderColor: string,
   description: string
 }
-
-export default CSSModules(ColorSample, styles, {allowMultiple: true})
