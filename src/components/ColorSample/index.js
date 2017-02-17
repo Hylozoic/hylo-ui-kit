@@ -1,5 +1,5 @@
-import styles from './styles.css'
 import CSSModules from 'react-css-modules'
 import component from './component'
+import styles from './styles.css'
 
-export default CSSModules(component, styles, {allowMultiple: true})
+export default CSSModules(styles, {allowMultiple: true})(component)

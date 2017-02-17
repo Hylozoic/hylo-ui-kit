@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 import { Link } from 'react-router'
 import styles from './App.css'
-
 class App extends Component {
   render () {
     return (

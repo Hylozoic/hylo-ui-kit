@@ -1,7 +1,11 @@
 import React from 'react'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import App from './App'
-import Typography from './components/Typography/index.js'
+
+// LEJ: The following throws and error looking for Typography.js
+//    import Typography from './components/Typography'
+// Need to figure-out why webpack? is defaulting to adding the .js
+import Typography from './components/Typography/'
 
 export default
   <Router history={hashHistory}>

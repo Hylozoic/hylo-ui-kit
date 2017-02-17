@@ -1,4 +1,5 @@
 import React from 'react'
+
 const { string } = React.PropTypes
 
 export default function ColorSample ({ color, opacity = 1, textColor = '#FFF', borderColor, description }) {
