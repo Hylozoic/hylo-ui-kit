@@ -15,42 +15,42 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
           </div>
-          <div className='display'>
+          <div className='h-display'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            H2
           </div>
           <div styleName='style-attributes'>
-            Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
+            Circular Book / 18pt, 0 ch, 22 line / Color: 2C4059
           </div>
-          <div className='display'>
+          <div className='h-subheadline'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
       </div>
-      <div styleName='style-card-row'>
+      <div styleName='style-card-row' className='no-bottom-border'>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            H1
           </div>
           <div styleName='style-attributes'>
-            Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
+            Circular Medium / 24pt, 0 ch, 28 line / Color: 2C4059
           </div>
-          <div className='display'>
+          <div className='h-headline'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            H3
           </div>
           <div styleName='style-attributes'>
-            Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
+            Circular Bold / 14pt, 0 ch, 18 line / Color: 2C4059
           </div>
-          <div className='display'>
+          <div className='h-minor'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
@@ -61,48 +61,48 @@ function Typography (props) {
       <div styleName='style-card-row'>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            Body 18pt - Black
           </div>
           <div styleName='style-attributes'>
-            Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
+            Circular Book / 18pt, 0 ch, 24 line / Color: 2C4059 80%
           </div>
-          <div className='display'>
-            Five quacking zephyrs jolt my wax bed.
+          <div styleName='style-example' className='body-dark-lg'>
+            Apparently we had reached a great height in atmosphere, for the sky was a dead black.
           </div>
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            Body 15pt - Black
           </div>
           <div styleName='style-attributes'>
-            Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
+            Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 80%
           </div>
-          <div className='display'>
-            Five quacking zephyrs jolt my wax bed.
+          <div styleName='style-example' className='body-dark-sm'>
+            Apparently we had reached a great height in atmosphere, for the sky was a dead black.
           </div>
         </div>
       </div>
       <div styleName='style-card-row'>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            Body 17pt - Grey
           </div>
           <div styleName='style-attributes'>
-            Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
+            Circular Book / 17pt, 0 ch, 25 line / Color: 2C4059 60%
           </div>
-          <div className='display'>
-            Five quacking zephyrs jolt my wax bed.
+          <div styleName='style-example' className='body-lt-lg'>
+            Apparently we had reached a great height in atmosphere, for the sky was a dead black.
           </div>
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            Body 15pt - Grey
           </div>
           <div styleName='style-attributes'>
-            Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
+            Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 60%
           </div>
-          <div className='display'>
-            Five quacking zephyrs jolt my wax bed.
+          <div styleName='style-example' className='body-lt-sm'>
+            Apparently we had reached a great height in atmosphere, for the sky was a dead black.
           </div>
         </div>
       </div>
