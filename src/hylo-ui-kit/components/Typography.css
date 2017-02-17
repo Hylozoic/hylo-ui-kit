@@ -1,11 +1,9 @@
-@import '../hylo-app/css/typography.css';
-@import '../hylo-app/css/colors.css';
-
-.sheet {
-  composes: sheet from "../App.css";
-  /* LEJ: Robbie, note, I'm being horrible here on purpose ! :) */
-  padding-bottom: 0px;
-}
+/*
+  LEJ: The following imports should are imported here already at the top of the
+  hylo-ui-kit app. Leaving the double import here for now for clarity.
+*/
+@import '../../css/hylo-app/typography.css';
+@import '../../css/hylo-app/colors.css';
 
 .row {
   display: flex;
@@ -25,6 +23,13 @@
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 100px;
+}
+
+.sheet {
+  background-color: var(--color-white);
+  margin: 28px 50px;
+  padding: 82px 70px 0 70px;
+  border-radius: 6px;
 }
 
 .title {

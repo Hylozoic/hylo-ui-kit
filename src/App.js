@@ -1,14 +1,26 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react'
+import CSSModules from 'react-css-modules'
+import { Link } from 'react-router'
 import styles from './App.css'
-import Typography from './components/Typography'
 
 class App extends Component {
   render () {
     return (
-      <Typography />
+      (
+        <div>
+          <div styleName='sheet'>
+            <h2>hylo-ui-kit</h2>
+            <ul styleName='menu'>
+              <li styleName='menu-item'><Link to='/typography'>Typography</Link></li>
+              <li styleName='menu-item'><Link to='/other'>Other</Link></li>
+            </ul>
+          </div>
+          {this.props.children}
+        </div>
+      )
     )
   }
 }
 
-export default App
+export default CSSModules(App, styles, {allowMultiple: true})
