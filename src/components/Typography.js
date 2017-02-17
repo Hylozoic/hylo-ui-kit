@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Typography.css'
 import CSSModules from 'react-css-modules'
+import ColorSample from './ColorSample'
 
 function Typography (props) {
   return <div>
@@ -204,6 +205,14 @@ function Typography (props) {
       </div>
     </div>
     <div styleName='sheet'>
+      <div styleName='title'>Colors</div>
+      <div styleName='row'>
+        <ColorSample color='#2C4059' description='Backgrounds, Header text styles' />
+        <ColorSample color='#2C4059' opacity='0.8' description='Body black text styles' />
+        <ColorSample color='#FFFFFF' textColor='#879BAB' borderColor='#DCDCDC' description='Main background, Card Background' />
+        <ColorSample color='#0DC3A0' />
+        <ColorSample color='#EAE6FA' textColor='#BB60A8' />
+      </div>
     </div>
   </div>
 }
