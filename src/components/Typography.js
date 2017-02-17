@@ -3,6 +3,7 @@ import styles from './Typography.css'
 import CSSModules from 'react-css-modules'
 
 function Typography (props) {
+  console.log('styles')
   return <div styleName='page'>
     <div styleName='title'>Typography</div>
     <div styleName='section-title'>Headers</div>
@@ -149,7 +150,7 @@ function Typography (props) {
           </div>
         </div>
       </div>
-      <div styleName='column-flex-item'>
+      <div styleName='column flex-item'>
         <div styleName='section'>
           <div styleName='style-card'>
             <div styleName='style-name'>
