@@ -1,4 +1,6 @@
-:global body {
+@import './css/base.global.css';
+
+body {
   font-family: var(--font-family-regular);
-  background-color: #0DC3A0;
+  background-color: var(--color-caribbean-green);
 }

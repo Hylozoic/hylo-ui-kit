@@ -1,5 +1,7 @@
+@import '../css/base.global.css';
+
 .page {
-  background-color: white;
+  background-color: var(--color-white);
   margin: 28px 42px;
   padding: 82px 70px;
   border-radius: 6px;
