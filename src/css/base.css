@@ -1,0 +1,171 @@
+@import 'normalize.css';
+
+@font-face {
+  font-family: "Circular Book";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+@font-face {
+  font-family: "Circular Medium";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+@font-face {
+  font-family: "Circular Bold";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+/* http://chir.ag/projects/name-that-color */
+/* http://chir.ag/projects/ntc/ */
+:root {
+  /* Colors */
+  --color-rhino: #2C4059;
+  --color-rhino-80: color(var(--color-rhino) 80%);
+  --color-rhino-60: color(var(--color-rhino) 60%);
+  --color-rhino-50: color(var(--color-rhino) 50%);
+  --color-rhino-30: color(var(--color-rhino) 30%);
+  --color-rhino-darker: #2C405A;
+  /* */
+  --color-white: #FFFFFF;
+  --color-athens-gray: #FAFBFC;
+  /* */
+  --color-caribbean-green: #0DC3A0;
+  --color-medium-purple: #9883E5;
+  --color-fuchsia-pink: #BB60A8;
+  --color-picton-blue: #40A1DD;
+  --color-persimmon: #FE6848;
+  /* */
+  --color-iceberg: #CFF3EC;
+  --color-moon-raker: #EAE6FA;
+  --color-prim: #F1DFEE;
+  --color-link-water: #D9ECF8;
+  --color-peach-schnapps: #FFE1DA;
+  /* */
+  --color-mountain-meadow: #23CC80;
+  --color-amaranth: #EE4266;
+  --color-yello-orange: #FFB949;
+
+  /* Fonts */
+  --font-family-regular: 'Circular Book';
+  --font-family-medium: 'Circular Medium';
+  --font-family-bold: 'Circular Bold';
+}
+
+.h-display {
+  font-family: var(--font-family-bold);
+  font-size: 32pt;
+  letter-spacing: -0.5;
+  line-height: 36pt;
+  color: var(--color-rhino);
+}
+
+.h-headline, h1 {
+  font-family: var(--font-family-medium);
+  font-size: 24pt;
+  letter-spacing: 0;
+  line-height: 28pt;
+  color: var(--color-rhino);
+}
+
+.h-subheadline, h2 {
+  font-family: var(--font-family-regular);
+  font-size: 18pt;
+  letter-spacing: 0;
+  line-height: 22pt;
+  color: var(--color-rhino);
+}
+
+.h-minor, h3 {
+  font-family: var(--font-family-regular);
+  font-size: 14pt;
+  letter-spacing: 0;
+  line-height: 18pt;
+  color: var(--color-rhino);
+}
+
+.body-drk-lg {
+  font-family: var(--font-family-regular);
+  color: var(--color-rhino-80);
+  font-size: 18pt;
+  letter-spacing: 0;
+  line-height: 24pt;
+}
+
+.body-lt-lg {
+  font-family: var(--font-family-regular);
+  color: var(--color-rhino-60);
+  font-size: 17pt;
+  letter-spacing: 0;
+  line-height: 25pt;
+}
+
+.body-drk-sm {
+  font-family: var(--font-family-regular);
+  color: var(--color-rhino-80);
+  font-size: 15pt;
+  letter-spacing: 0;
+  line-height: 22pt;
+}
+
+.body-lt-sm {
+  font-family: var(--font-family-regular);
+  color: var(--color-rhino-60);
+  font-size: 15pt;
+  letter-spacing: 0;
+  line-height: 22pt;
+}
+
+.caption-drk-lg{
+  font-family: var(--font-family-regular);
+  color: var(--color-rhino-80);
+  font-size: 14pt;
+  letter-spacing: 0;
+  line-height: 18pt;
+}
+
+.caption-lt-lg {
+  font-family: var(--font-family-regular);
+  color: var(--color-rhino-60);
+  font-size: 13pt;
+  letter-spacing: 0;
+  line-height: 19pt;
+}
+
+.tag {
+  font-family: var(--font-family-bold);
+  font-size: 10pt;
+  letter-spacing: 0.6;
+  line-height: 14pt;
+}
+
+.button {
+  font-family: var(--font-family-medium);
+  color: var(--color-caribbean-green);
+  font-size: 16pt;
+  letter-spacing: 0;
+  line-height: 20pt;
+}
+
+.button-sm {
+  font-family: var(--font-family-bold);
+  color: var(--color-caribbean-green);
+  font-size: 10pt;
+  letter-spacing: 0.6;
+  line-height: 14pt;
+}
+
+.cards {
+  font-family: var(--font-family-bold);
+  color: var(--color-rhino);
+  font-size: 14pt;
+  letter-spacing: 0;
+  line-height: 20pt;
+}
+
+.timestamp {
+  font-family: var(--font-family-regular);
+  color: var(--color-rhino-60);
+  font-size: 13pt;
+  letter-spacing: 0;
+  line-height: 16pt;
+}

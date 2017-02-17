@@ -15,18 +15,18 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
           </div>
-          <div className='display'>
+          <div className='h-display'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            .h-subheadline, h2
           </div>
           <div styleName='style-attributes'>
             Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
           </div>
-          <div className='display'>
+          <div className='h-subheadline'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
@@ -34,23 +34,23 @@ function Typography (props) {
       <div styleName='style-card-row'>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            .h-headline, h1
           </div>
           <div styleName='style-attributes'>
             Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
           </div>
-          <div className='display'>
+          <div className='h-headline'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            .h-minor, h3
           </div>
           <div styleName='style-attributes'>
             Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
           </div>
-          <div className='display'>
+          <div className='h-minor'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
