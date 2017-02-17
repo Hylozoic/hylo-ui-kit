@@ -21,7 +21,7 @@ function Typography (props) {
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            H2
+            .h-subheadline, h2
           </div>
           <div styleName='style-attributes'>
             Circular Book / 18pt, 0 ch, 22 line / Color: 2C4059
@@ -34,7 +34,7 @@ function Typography (props) {
       <div styleName='style-card-row' className='no-bottom-border'>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            H1
+            .h-headline, h1
           </div>
           <div styleName='style-attributes'>
             Circular Medium / 24pt, 0 ch, 28 line / Color: 2C4059
@@ -45,7 +45,7 @@ function Typography (props) {
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            H3
+            .h-minor, h3
           </div>
           <div styleName='style-attributes'>
             Circular Bold / 14pt, 0 ch, 18 line / Color: 2C4059
