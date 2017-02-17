@@ -122,20 +122,11 @@ module.exports = {
         include: paths.appSrc,
         loader: 'babel',
         query: {
-
           // This is a feature of `babel-loader` for webpack (not Babel itself).
           // It enables caching results in ./node_modules/.cache/babel-loader/
           // directory for faster rebuilds.
           cacheDirectory: true
         }
-      },
-      // For CSS files wit the *.global.css extension
-      {
-        test: /\.global\.s?css$/,
-        loaders: [
-          'style?sourceMap',
-          'css?importLoaders=1!postcss'
-        ]
       },
       // Use CSS modules for all CSS files without the *.global.css extension
       // "postcss" loader applies autoprefixer to our CSS.
@@ -145,10 +136,10 @@ module.exports = {
       // in development "style" loader enables hot editing of CSS.
       // RFC: replaced the default for react css-modules, as per https://github.com/gajus/react-css-modules
       {
-        test: /^((?!\.global).)*\.s?css$/,
+        test: /\.css$/,
         loaders: [
           'style?sourceMap',
-          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!postcss'
+          'css?modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]!postcss'
         ]
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
@@ -172,6 +163,7 @@ module.exports = {
   postcss: function () {
     return [
       require('postcss-import'),
+      require('postcss-nested'),
       require('postcss-cssnext')({
         browsers: [
           '>1%',

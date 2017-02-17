@@ -1,4 +1,7 @@
-:global body {
-  font-family: var(--font-family-regular);
-  background-color: #0DC3A0;
-}
+@import './css/index.css';
+
+/*
+  LEJ: It's currently a bit opaque in this setup, but this App component begins
+  in the DOM begins just below the <body> element wrapped in a CSS global 'root'
+  classed div, i.e. <div class='root'>.
+*/
