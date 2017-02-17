@@ -1,9 +1,8 @@
 import React from 'react'
 import CSSModules from 'react-css-modules'
-import ColorSample from './ColorSample'
-import styles from './Typography.css'
+import ColorSample from '../ColorSample/index.js'
 
-function Typography (props) {
+export default function Typography (props) {
   return <div>
     <div styleName='sheet'>
       <div styleName='title'>Typography</div>
@@ -216,5 +215,3 @@ function Typography (props) {
     </div>
   </div>
 }
-
-export default CSSModules(Typography, styles, {allowMultiple: true})

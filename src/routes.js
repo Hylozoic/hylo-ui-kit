@@ -1,7 +1,7 @@
 import React from 'react'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import App from './App'
-import Typography from './components/Typography'
+import Typography from './components/Typography/index.js'
 
 export default
   <Router history={hashHistory}>

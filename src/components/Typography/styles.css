@@ -1,8 +1,8 @@
-@import '../hylo-app/css/typography.css';
-@import '../hylo-app/css/colors.css';
+@import '../../hylo-app/css/typography.css';
+@import '../../hylo-app/css/colors.css';
 
 .sheet {
-  composes: sheet from "../App.css";
+  composes: sheet from "../../App.css";
   /* LEJ: Robbie, note, I'm being horrible here on purpose ! :) */
   padding-bottom: 0px;
 }
