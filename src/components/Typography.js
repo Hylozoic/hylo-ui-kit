@@ -10,7 +10,7 @@ function Typography (props) {
       <div styleName='style-card-row'>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Display
+            .h-display
           </div>
           <div styleName='style-attributes'>
             Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
@@ -61,7 +61,7 @@ function Typography (props) {
       <div styleName='style-card-row'>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Body 18pt - Black
+            .body-drk-lg
           </div>
           <div styleName='style-attributes'>
             Circular Book / 18pt, 0 ch, 24 line / Color: 2C4059 80%
@@ -72,7 +72,7 @@ function Typography (props) {
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Body 15pt - Black
+            .body-drk-sm
           </div>
           <div styleName='style-attributes'>
             Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 80%
@@ -85,7 +85,7 @@ function Typography (props) {
       <div styleName='style-card-row'>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Body 17pt - Grey
+            .body-lt-lg
           </div>
           <div styleName='style-attributes'>
             Circular Book / 17pt, 0 ch, 25 line / Color: 2C4059 60%
@@ -96,7 +96,7 @@ function Typography (props) {
         </div>
         <div styleName='style-card'>
           <div styleName='style-name'>
-            Body 15pt - Grey
+            .body-lt-sm
           </div>
           <div styleName='style-attributes'>
             Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 60%
