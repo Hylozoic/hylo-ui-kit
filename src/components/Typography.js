@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './Typography.css'
 import CSSModules from 'react-css-modules'
 import ColorSample from './ColorSample'
+import styles from './Typography.css'
 
 function Typography (props) {
   return <div>

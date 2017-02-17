@@ -1,7 +1,29 @@
 @import './css/index.css';
 
-/*
-  LEJ: It's currently a bit opaque in this setup, but this App component begins
-  in the DOM begins just below the <body> element wrapped in a CSS global 'root'
-  classed div, i.e. <div class='root'>.
-*/
+.sheet {
+  background-color: var(--color-white);
+  margin: 28px 50px;
+  padding: 82px 70px 82px 70px;
+  border-radius: 6px;
+}
+
+.nav {
+  padding: 20px;
+}
+
+h2 {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.menu-item {
+  display: inline;
+  margin-right: 10px;
+}
