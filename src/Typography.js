@@ -15,7 +15,7 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
           </div>
-          <div className='h-display'>
+          <div styleName='style-example-header' className='h-display'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
@@ -26,7 +26,7 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Book / 18pt, 0 ch, 22 line / Color: 2C4059
           </div>
-          <div className='h-subheadline'>
+          <div styleName='style-example-header' className='h-subheadline'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
@@ -39,7 +39,7 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Medium / 24pt, 0 ch, 28 line / Color: 2C4059
           </div>
-          <div className='h-headline'>
+          <div styleName='style-example-header' className='h-headline'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
@@ -50,7 +50,7 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Bold / 14pt, 0 ch, 18 line / Color: 2C4059
           </div>
-          <div className='h-minor'>
+          <div styleName='style-example-header' className='h-minor'>
             Five quacking zephyrs jolt my wax bed.
           </div>
         </div>
@@ -66,7 +66,7 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Book / 18pt, 0 ch, 24 line / Color: 2C4059 80%
           </div>
-          <div styleName='style-example' className='body-dark-lg'>
+          <div styleName='style-example-body' className='body-drk-lg'>
             Apparently we had reached a great height in atmosphere, for the sky was a dead black.
           </div>
         </div>
@@ -77,7 +77,7 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 80%
           </div>
-          <div styleName='style-example' className='body-dark-sm'>
+          <div styleName='style-example-body' className='body-drk-sm'>
             Apparently we had reached a great height in atmosphere, for the sky was a dead black.
           </div>
         </div>
@@ -90,7 +90,7 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Book / 17pt, 0 ch, 25 line / Color: 2C4059 60%
           </div>
-          <div styleName='style-example' className='body-lt-lg'>
+          <div styleName='style-example-body' className='body-lt-lg'>
             Apparently we had reached a great height in atmosphere, for the sky was a dead black.
           </div>
         </div>
@@ -101,7 +101,7 @@ function Typography (props) {
           <div styleName='style-attributes'>
             Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 60%
           </div>
-          <div styleName='style-example' className='body-lt-sm'>
+          <div styleName='style-example-body' className='body-lt-sm'>
             Apparently we had reached a great height in atmosphere, for the sky was a dead black.
           </div>
         </div>
