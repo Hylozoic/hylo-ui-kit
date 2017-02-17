@@ -21,10 +21,10 @@
   flex-basis: 100px;
 }
 
-.page {
+.sheet {
   background-color: var(--color-white);
   margin: 28px 50px;
-  padding: 82px 70px;
+  padding: 82px 70px 0 70px;
   border-radius: 6px;
 }
 
@@ -56,7 +56,6 @@
   composes: flex-item;
 
   margin-top: 32px;
-  margin-right: 80px;
   min-width: 0;
   width: auto;
   border-bottom: 1px solid #a0acbb;
