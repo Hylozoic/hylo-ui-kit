@@ -1,24 +1,10 @@
 @import './variables.css';
-
-@font-face {
-  font-family: "Circular Book";
-  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
-}
-
-@font-face {
-  font-family: "Circular Medium";
-  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
-}
-
-@font-face {
-  font-family: "Circular Bold";
-  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
 /* Global Typography */
 
 .h-display {
-  font-family: var(--font-family-bold);
+  @apply --font-bold;
   font-size: 32pt;
   letter-spacing: -0.5;
   line-height: 36pt;
@@ -26,7 +12,7 @@
 }
 
 .h-headline {
-  font-family: var(--font-family-medium);
+  @apply --font-medium;
   font-size: 24pt;
   letter-spacing: 0;
   line-height: 28pt;
@@ -34,7 +20,7 @@
 }
 
 .h-subheadline {
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   font-size: 18pt;
   letter-spacing: 0;
   line-height: 22pt;
@@ -42,7 +28,7 @@
 }
 
 .h-minor {
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   font-size: 14pt;
   letter-spacing: 0;
   line-height: 18pt;
@@ -52,7 +38,7 @@
 /* Body */
 
 .body-drk-lg {
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   color: var(--color-rhino-80);
   font-size: 18pt;
   letter-spacing: 0;
@@ -60,7 +46,7 @@
 }
 
 .body-lt-lg {
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   color: var(--color-rhino-60);
   font-size: 17pt;
   letter-spacing: 0;
@@ -68,7 +54,7 @@
 }
 
 .body-drk-sm {
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   color: var(--color-rhino-80);
   font-size: 15pt;
   letter-spacing: 0;
@@ -76,7 +62,7 @@
 }
 
 .body-lt-sm {
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   color: var(--color-rhino-60);
   font-size: 15pt;
   letter-spacing: 0;
@@ -84,7 +70,7 @@
 }
 
 .caption-drk-lg{
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   color: var(--color-rhino-80);
   font-size: 14pt;
   letter-spacing: 0;
@@ -92,7 +78,7 @@
 }
 
 .caption-lt-lg {
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   color: var(--color-rhino-60);
   font-size: 13pt;
   letter-spacing: 0;
@@ -102,7 +88,7 @@
 /* Misc */
 
 .tag {
-  font-family: var(--font-family-bold);
+  @apply --font-bold;
   color: var(--color-nepal);
   font-size: 10pt;
   letter-spacing: 0.6;
@@ -111,7 +97,7 @@
 }
 
 .button {
-  font-family: var(--font-family-medium);
+  @apply --font-medium;
   color: var(--color-caribbean-green);
   font-size: 16pt;
   letter-spacing: 0;
@@ -119,7 +105,7 @@
 }
 
 .button-sm {
-  font-family: var(--font-family-bold);
+  @apply --font-bold;
   color: var(--color-caribbean-green);
   font-size: 10pt;
   letter-spacing: 0.6;
@@ -127,7 +113,7 @@
 }
 
 .cards {
-  font-family: var(--font-family-bold);
+  @apply --font-bold;
   color: var(--color-rhino);
   font-size: 14pt;
   letter-spacing: 0;
@@ -135,7 +121,7 @@
 }
 
 .timestamp {
-  font-family: var(--font-family-regular);
+  @apply --font-regular;
   color: var(--color-rhino-60);
   font-size: 13pt;
   letter-spacing: 0;

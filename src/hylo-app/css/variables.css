@@ -31,7 +31,17 @@
   --color-yello-orange: #FFB949;
 
   /* Fonts */
-  --font-family-regular: 'Circular Book';
-  --font-family-medium: 'Circular Medium';
-  --font-family-bold: 'Circular Bold';
+  --font-base: 'Poppins', sans-serif;;
+  --font-regular: {
+    font-family: var(--font-base);
+    font-weight: 300;
+  }
+  --font-medium: {
+    font-family: var(--font-base);
+    font-weight: 400;
+  }
+  --font-bold: {
+    font-family: var(--font-base);
+    font-weight: 500;
+  }
 }
