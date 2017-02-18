@@ -1,4 +1,12 @@
-@import './css/index.css';
+/* LEJ: Optional / TBD */
+@import 'normalize.css';
+
+@import './css/variables.css';
+
+body {
+  @apply --font-regular;
+  background-color: var(--color-caribbean-green);
+}
 
 .nav {
   composes: sheet from './css/layout.css';
