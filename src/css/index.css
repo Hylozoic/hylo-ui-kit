@@ -5,11 +5,8 @@
   from the color CSS custom properties found in hylo-app. Right now it's not clear
   how to CSS Modules compose CSS custom properties.
 */
-@import '../hylo-app/css/colors.css';
-@import '../hylo-app/css/typography.css';
 
-@import './colors.css';
-@import './typography.css';
+@import './variables.css';
 
 body {
   font-family: var(--font-family-regular);

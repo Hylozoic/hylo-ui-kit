@@ -29,4 +29,9 @@
   --color-mountain-meadow: #23CC80;
   --color-amaranth: #EE4266;
   --color-yello-orange: #FFB949;
+
+  /* Fonts */
+  --font-family-regular: 'Circular Book';
+  --font-family-medium: 'Circular Medium';
+  --font-family-bold: 'Circular Bold';
 }

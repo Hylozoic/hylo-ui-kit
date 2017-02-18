@@ -2,9 +2,8 @@ import React from 'react'
 
 const { string } = React.PropTypes
 
-export default function ColorSample ({ color, opacity = 1, textColor = '#FFF', borderColor, description }) {
+export default function ColorSample ({ color, colorName, opacity = 1, textColor = '#FFF', borderColor, description }) {
   const label = opacity !== 1 ? `${opacity * 100}%` : color
-
   const circleStyle = {
     backgroundColor: color,
     border: borderColor ? `${borderColor} 1px solid` : null,
@@ -28,7 +27,8 @@ export default function ColorSample ({ color, opacity = 1, textColor = '#FFF', b
   </div>
 }
 ColorSample.propTypes = {
-  color: string.isRequired,
+  color: string,
+  colorName: string,
   opacity: string,
   textColor: string,
   borderColor: string,
