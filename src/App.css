@@ -1,11 +1,5 @@
 @import './css/index.css';
-
-.sheet {
-  background-color: var(--color-white);
-  margin: 28px 50px;
-  padding: 82px 70px 82px 70px;
-  border-radius: 6px;
-}
+@import './css/layout.css';
 
 .nav {
   padding: 20px;

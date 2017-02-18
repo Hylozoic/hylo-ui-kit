@@ -12,7 +12,7 @@ class App extends Component {
             <h2>hylo-ui-kit</h2>
             <ul styleName='menu'>
               <li styleName='menu-item'><Link to='/typography'>Typography</Link></li>
-              <li styleName='menu-item'><Link to='/other'>Other</Link></li>
+              <li styleName='menu-item'><Link to='/elements'>Elements</Link></li>
             </ul>
           </div>
           {this.props.children}

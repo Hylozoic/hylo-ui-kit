@@ -6,12 +6,13 @@ import App from './App'
 //    import Typography from './components/Typography'
 // Need to figure-out why webpack? is defaulting to adding the .js
 import Typography from './components/Typography/'
+import Elements from './components/Elements/'
 
 export default
   <Router history={hashHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Typography} />
       <Route path='typography' component={Typography} />
-      <Route path='other' component={Typography} />
+      <Route path='elements' component={Elements} />
     </Route>
   </Router>

@@ -1,5 +1,5 @@
 import React from 'react'
-import ColorSample from '../ColorSample'
+import ColorSample from './ColorSample'
 
 export default function Typography (props) {
   return <div>
