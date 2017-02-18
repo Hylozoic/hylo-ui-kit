@@ -1,14 +1,17 @@
 @import './css/index.css';
-@import './css/layout.css';
 
 .nav {
-  padding: 20px;
+  composes: sheet from './css/layout.css';
+  background-color: transparent;
+  width: calc(var(--root-width) + 24px);
+  padding-bottom: var(--space-sm);
+  padding-top: var(--space-sm);
 }
 
 .heading {
   composes: sheet__title from './css/layout.css';
   display: inline;
-  margin-right: 10px;
+  margin-right: var(--space-std);
 }
 
 .menu {
@@ -20,5 +23,19 @@
 
 .menu-item {
   display: inline;
-  margin-right: 10px;
+  padding: 0 var(--space-sm);
+  border-right: solid 1px white;
+  &:first-child {
+    padding-left: 0px;
+  }
+  &:last-child {
+    border: 0px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-shadow: 1px 1px var(--color-rhino);
+    }
+  }
 }

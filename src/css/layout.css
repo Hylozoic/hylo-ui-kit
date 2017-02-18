@@ -6,14 +6,15 @@
   background-color: var(--color-white);
   width: var(--sheet-width);
   margin: var(--sheet-vertical-margin) auto;
-  padding: 82px 70px;
+  padding: var(--space-xl);
   border-radius: var(--sheet-border-radius);
 }
 
 .sheet__title {
   @apply --font-bold;
+  padding-top: 10px;
   font-size: 24pt;
-  margin-bottom: 65px;
+  margin-bottom: var(--space-xl);
   color: #2C4059;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .section {
-  margin-bottom: 42px;
+  margin-bottom: calc(var(--space-lg) + 10px);
   &__box {
     display: flex;
     flex-flow: row wrap;
@@ -49,12 +50,14 @@
         Look into config or workaround...  */
 
 .section__title {
-  margin-bottom: 32px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: var(--space-lg);
   color: #2C4059;
   opacity: 0.6;
 }
 
 .section__title--collapsed {
   composes: section__title;
-  margin-bottom: 12px;
+  margin-bottom: var(--space-sm);
 }

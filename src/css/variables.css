@@ -2,9 +2,15 @@
 @import '../hylo-app/css/variables.css';
 
 :root {
-  --sheet-width: 1040px;
+  --root-width: 1156px;
+  --sheet-width: calc(var(--root-width) - 120px);
   --sheet-vertical-margin: 28px;
   --sheet-border-radius: 6px;
   --section-border-width: 1px;
-  --card-margin: 32px;
+
+  /* Spacing */
+  --space-xl: calc(var(--space-lg) * 2);
+  --space-lg: calc(var(--space-sm) * 3);
+  --space-std: 32px;
+  --space-sm: 12px;
 }

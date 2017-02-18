@@ -9,7 +9,7 @@ class App extends Component {
     return (
       (
         <div>
-          <div styleName='sheet'>
+          <div styleName='nav'>
             <div styleName='heading'>hylo-ui-kit</div>
             <ul styleName='menu'>
               <li styleName='menu-item'><Link to='/typography'>Typography</Link></li>
