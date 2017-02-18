@@ -1,0 +1,31 @@
+.card {
+  composes: flex-item from '../../../css/layout.css';
+  margin-top: 32px;
+  min-width: 0;
+  width: auto;
+  border-bottom: 1px solid #a0acbb;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: 600;
+  color: #2C4059;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.attributes {
+  font-size: 11pt;
+  color: #2C4059;
+  opacity: 0.6;
+}
+
+.example-header {
+  margin: 35px 0;
+}
+
+.example-body {
+  margin: 25px 0;
+  max-width: 300px;
+}

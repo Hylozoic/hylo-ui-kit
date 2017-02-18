@@ -1,4 +1,5 @@
 import React from 'react'
+import StyleCard from './StyleCard'
 import ColorSample from './ColorSample'
 
 export default function Typography (props) {
@@ -8,103 +9,39 @@ export default function Typography (props) {
       <div styleName='section-title'>Headers</div>
       <div styleName='section'>
         <div styleName='row'>
-          <div styleName='style-card'>
-            <div styleName='style-name'>
-              .h-display
-            </div>
-            <div styleName='style-attributes'>
-              Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059
-            </div>
-            <div styleName='style-example-header' className='h-display'>
-              Five quacking zephyrs jolt my wax bed.
-            </div>
-          </div>
-          <div styleName='style-card'>
-            <div styleName='style-name'>
-              .h-subheadline, h2
-            </div>
-            <div styleName='style-attributes'>
-              Circular Book / 18pt, 0 ch, 22 line / Color: 2C4059
-            </div>
-            <div styleName='style-example-header' className='h-subheadline'>
-              Five quacking zephyrs jolt my wax bed.
-            </div>
-          </div>
+          <StyleCard styleClassName='h-display'
+            description='Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059'
+            sampleKey='short' />
+          <StyleCard styleClassName='h-subheadline' name='h2'
+            description='Circular Book / 18pt, 0 ch, 22 line / Color: 2C4059'
+            sampleKey='short' />
         </div>
         <div styleName='row'>
-          <div styleName='style-card no-border'>
-            <div styleName='style-name'>
-              .h-headline, h1
-            </div>
-            <div styleName='style-attributes'>
-              Circular Medium / 24pt, 0 ch, 28 line / Color: 2C4059
-            </div>
-            <div styleName='style-example-header' className='h-headline'>
-              Five quacking zephyrs jolt my wax bed.
-            </div>
-          </div>
-          <div styleName='style-card no-border'>
-            <div styleName='style-name'>
-              .h-minor, h3
-            </div>
-            <div styleName='style-attributes'>
-              Circular Bold / 14pt, 0 ch, 18 line / Color: 2C4059
-            </div>
-            <div styleName='style-example-header' className='h-minor'>
-              Five quacking zephyrs jolt my wax bed.
-            </div>
-          </div>
+          <StyleCard styleClassName='h-headline' name='h1'
+            description='Circular Medium / 24pt, 0 ch, 28 line / Color: 2C4059'
+            sampleKey='short' />
+          <StyleCard styleClassName='h-minor' name='h3'
+            description='Circular Bold / 14pt, 0 ch, 18 line / Color: 2C4059'
+            sampleKey='short' />
         </div>
       </div>
       <div styleName='section-title'>Body Styles</div>
       <div styleName='section'>
         <div styleName='row'>
-          <div styleName='style-card'>
-            <div styleName='style-name'>
-              .body-drk-lg
-            </div>
-            <div styleName='style-attributes'>
-              Circular Book / 18pt, 0 ch, 24 line / Color: 2C4059 80%
-            </div>
-            <div styleName='style-example-body' className='body-drk-lg'>
-              Apparently we had reached a great height in the atmosphere, for the sky was a dead black.
-            </div>
-          </div>
-          <div styleName='style-card'>
-            <div styleName='style-name'>
-              .body-drk-sm
-            </div>
-            <div styleName='style-attributes'>
-              Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 80%
-            </div>
-            <div styleName='style-example-body' className='body-drk-sm'>
-              Apparently we had reached a great height in the atmosphere, for the sky was a dead black.
-            </div>
-          </div>
+          <StyleCard styleClassName='body-drk-lg'
+            description='Circular Book / 18pt, 0 ch, 24 line / Color: 2C4059 80%'
+            sampleKey='medium' />
+          <StyleCard styleClassName='body-drk-sm'
+            description='Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 80%'
+            sampleKey='medium' />
         </div>
         <div styleName='row'>
-          <div styleName='style-card no-border'>
-            <div styleName='style-name'>
-              .body-lt-lg
-            </div>
-            <div styleName='style-attributes'>
-              Circular Book / 17pt, 0 ch, 25 line / Color: 2C4059 60%
-            </div>
-            <div styleName='style-example-body' className='body-lt-lg'>
-              Apparently we had reached a great height in the atmosphere, for the sky was a dead black.
-            </div>
-          </div>
-          <div styleName='style-card no-border'>
-            <div styleName='style-name'>
-              .body-lt-sm
-            </div>
-            <div styleName='style-attributes'>
-              Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 60%
-            </div>
-            <div styleName='style-example-body' className='body-lt-sm'>
-              Apparently we had reached a great height in the atmosphere, for the sky was a dead black.
-            </div>
-          </div>
+          <StyleCard styleClassName='body-lt-lg'
+            description='Circular Book / 17pt, 0 ch, 25 line / Color: 2C4059 60%'
+            sampleKey='medium' />
+          <StyleCard styleClassName='body-lt-sm'
+            description='Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 60%'
+            sampleKey='medium' />
         </div>
       </div>
       <div styleName='row'>
@@ -114,90 +51,34 @@ export default function Typography (props) {
       <div styleName='row'>
         <div styleName='column flex-item left-column'>
           <div styleName='section'>
-            <div styleName='style-card'>
-              <div styleName='style-name'>
-                Caption 13pt - Black
-              </div>
-              <div styleName='style-attributes'>
-                Circular Book / 14pt, 0 ch, 18 line / Color: 2C4059 80%
-              </div>
-              <div styleName='style-example-header' className='caption-drk-lg'>
-                Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
-              </div>
-            </div>
-            <div styleName='style-card'>
-              <div styleName='style-name'>
-                Caption 13pt - Grey
-              </div>
-              <div styleName='style-attributes'>
-                Circular Book / 13pt, 0 ch, 19 line / Color: 2C4059 60%
-              </div>
-              <div styleName='style-example-header' className='caption-lt-lg'>
-                Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
-              </div>
-            </div>
-            <div styleName='style-card no-border'>
-              <div styleName='style-name'>
-                Tag
-              </div>
-              <div styleName='style-attributes'>
-                Circular Bold / 10pt, 0.6 ch, 14 line / Color: 8DABC4;
-              </div>
-              <div styleName='style-example-body' className='tag'>
-                DASHBOARDS
-              </div>
-            </div>
+            <StyleCard styleClassName='caption-drk-lg' name='Caption 13pt - Black'
+              description='Circular Book / 14pt, 0 ch, 18 line / Color: 2C4059 80%'
+              sampleKey='long' />
+            <StyleCard styleClassName='caption-lt-lg' name='Caption 13pt - Grey'
+              description='Circular Book / 14pt, 0 ch, 18 line / Color: 2C4059 80%'
+              sampleKey='long' />
+            <StyleCard styleClassName='tag' name='.tag (Tag)'
+              description='Circular Bold / 10pt, 0.6 ch, 14 line / Color: 8DABC4'
+              sample='DASHBOARDS' />
           </div>
         </div>
         <div styleName='column flex-item'>
           <div styleName='section'>
-            <div styleName='style-card'>
-              <div styleName='style-name'>
-                Button - Regular
-              </div>
-              <div styleName='style-attributes'>
-                Circular Medium / 16pt, 0 ch, 20 line / Color: 0DC3A0
-              </div>
-              <div styleName='style-example-body' className='button'>
-                Save changes
-              </div>
-            </div>
-            <div styleName='style-card no-border'>
-              <div styleName='style-name'>
-                Button - Small
-              </div>
-              <div styleName='style-attributes'>
-                Circular Bold / 10pt, 0.6 ch, 14 line / Color: 0DC3A0
-              </div>
-              <div styleName='style-example-body' className='button-sm'>
-                Learn more
-              </div>
-            </div>
+            <StyleCard styleClassName='button' name='Button - Regular'
+              description='Circular Medium / 16pt, 0 ch, 20 line / Color: 0DC3A0'
+              sample='Save changes' />
+            <StyleCard styleClassName='button-sm' name='Button - Small'
+              description='Circular Bold / 10pt, 0.6 ch, 14 line / Color: 0DC3A0'
+              sample='Learn more' />
           </div>
           <div styleName='section-title'>Other</div>
           <div styleName='section'>
-            <div styleName='style-card'>
-              <div styleName='style-name'>
-                User Name - Cards
-              </div>
-              <div styleName='style-attributes'>
-                Circular Bold / 14pt, 0 ch, 20 line / Color: 2C4059
-              </div>
-              <div styleName='style-example-body' className='cards'>
-                Steven Pham
-              </div>
-            </div>
-            <div styleName='style-card no-border'>
-              <div styleName='style-name'>
-                Timestamp
-              </div>
-              <div styleName='style-attributes'>
-                Circular Book / 13pt, 0 ch, 16 line / Color: 2C4059 60%
-              </div>
-              <div styleName='style-example-body' className='timestamp'>
-                6 days ago
-              </div>
-            </div>
+            <StyleCard styleClassName='cards' name='User Name - Cards'
+              description='Circular Bold / 14pt, 0 ch, 20 line / Color: 2C4059'
+              sample='Steven Pham' />
+            <StyleCard styleClassName='timestamp' name='Timestamp'
+              description='Circular Book / 13pt, 0 ch, 16 line / Color: 2C4059 60%'
+              sample='6 days ago' />
           </div>
         </div>
       </div>
