@@ -1,3 +1,5 @@
+@import '../../../css/variables.css';
+
 .color-sample {
   flex-grow: 1;
   flex-shrink: 0;

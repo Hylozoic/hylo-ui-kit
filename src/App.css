@@ -5,7 +5,8 @@
   padding: 20px;
 }
 
-h2 {
+.heading {
+  composes: sheet__title from './css/layout.css';
   display: inline;
   margin-right: 10px;
 }

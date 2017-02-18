@@ -1,2 +1,10 @@
 /* LEJ: Just borrowing everything from hylo-app for now... */
 @import '../hylo-app/css/variables.css';
+
+:root {
+  --sheet-width: 1040px;
+  --sheet-vertical-margin: 28px;
+  --sheet-border-radius: 6px;
+  --section-border-width: 1px;
+  --card-margin: 32px;
+}

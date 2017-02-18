@@ -1,9 +1,25 @@
+/*
+  LEJ: I would have thought these were already available as variables are global
+  and they are already included at App and in layout.css used above in Typography ...
+*/
+@import '../../../css/variables.css';
+
 .card {
-  composes: flex-item from '../../../css/layout.css';
-  margin-top: 32px;
-  min-width: 0;
-  width: auto;
-  border-bottom: 1px solid #a0acbb;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((var(--sheet-width) / 2) - var(--card-margin) * 4);
+  padding: var(--card-margin) 0;
+  margin: 0 var(--card-margin);
+  box-sizing: border-box;
+  border-bottom: var(--section-border-width) solid #a0acbb;
+  &:last-child {
+    border-bottom: 0px;
+  }
+}
+
+.card--no-bottom-border {
+  composes: card;
+  border-bottom: 0px;
 }
 
 .name {
@@ -21,11 +37,6 @@
   opacity: 0.6;
 }
 
-.example-header {
-  margin: 35px 0;
-}
-
-.example-body {
-  margin: 25px 0;
-  max-width: 300px;
+.sample {
+  margin-top: 35px;
 }

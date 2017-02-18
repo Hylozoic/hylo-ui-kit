@@ -1,62 +1,59 @@
 @import './variables.css';
-/*
-  Layout ("sheet") styles
 
-  They live here for now as this is the parent and the first place they get used.
+/* Layout ("sheet") style */
 
-  Thinking still about where they should ultimately live. They are "layout" styles
-  which may make total sense to globalize. TBD.
-
-  For now I'm putting them as globals for later research, exploration and playing.
-*/
 .sheet {
   background-color: var(--color-white);
-  margin: 28px 50px;
-  padding: 82px 70px 82px 70px;
-  border-radius: 6px;
+  width: var(--sheet-width);
+  margin: var(--sheet-vertical-margin) auto;
+  padding: 82px 70px;
+  border-radius: var(--sheet-border-radius);
 }
 
-.title {
+.sheet__title {
   font-size: 24pt;
   margin-bottom: 65px;
   color: #2C4059;
 }
 
-.section-title {
+.sheet__flexbox {
+  display: flex;
+  flex-direction: row wrap;
+  &__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    margin-right: 25px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.section {
+  margin-bottom: 42px;
+  &__box {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #fafbfc;
+    border-radius: var(--sheet-border-radius);
+    border: var(--section-border-width) solid #808c9b;
+  }
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+/* LEJ: Can't nest and composes from a classed construted through nesting.
+        Look into config or workaround...  */
+
+.section__title {
   margin-bottom: 32px;
   color: #2C4059;
   opacity: 0.6;
 }
 
-.section {
-  background-color: #fafbfc;
-  padding: 0px 30px 0px 30px;
-  margin-bottom: 42px;
-  border-radius: 6px;
-  border: 1px solid #808c9b;
-}
-/* */
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-.left-column {
-  margin-right: 25px;
-}
-
-.flex-item {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 100px;
-}
-
-.no-border {
-  border-bottom: none !important;
+.section__title--collapsed {
+  composes: section__title;
+  margin-bottom: 12px;
 }

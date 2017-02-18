@@ -10,7 +10,7 @@ class App extends Component {
       (
         <div>
           <div styleName='sheet'>
-            <h2>hylo-ui-kit</h2>
+            <div styleName='heading'>hylo-ui-kit</div>
             <ul styleName='menu'>
               <li styleName='menu-item'><Link to='/typography'>Typography</Link></li>
               <li styleName='menu-item'><Link to='/elements'>Elements</Link></li>
@@ -23,4 +23,4 @@ class App extends Component {
   }
 }
 
-export default CSSModules(App, styles, {allowMultiple: true})
+export default CSSModules(styles, {allowMultiple: true})(App)
