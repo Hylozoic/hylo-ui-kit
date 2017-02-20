@@ -3,7 +3,7 @@ import React from 'react'
 const { string } = React.PropTypes
 
 export default function ColorSample ({ color, colorName, opacity = 1, textColor = '#FFF', borderColor, description }) {
-  const label = opacity !== 1 ? `${opacity * 100}%` : color
+  const colorLabel = opacity !== 1 ? `${opacity * 100}%` : color
   const circleStyle = {
     backgroundColor: color,
     border: borderColor ? `${borderColor} 1px solid` : null,
@@ -17,7 +17,9 @@ export default function ColorSample ({ color, colorName, opacity = 1, textColor 
 
   return <div styleName='color-sample'>
     <div styleName='circle' style={circleStyle}>
-      <div styleName='label' style={{color: textColor}}>{label}</div>
+      <div styleName='label' style={{color: textColor}}>
+        {colorLabel}
+      </div>
     </div>
     {description && <div styleName='tail-section'>
       <div styleName='tail' style={tailStyle} />
