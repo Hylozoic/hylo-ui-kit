@@ -20,7 +20,7 @@
 
 .sheet__flexbox {
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   &__item {
     flex-grow: 1;
     flex-shrink: 0;

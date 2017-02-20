@@ -1,1 +1,13 @@
 @import '../../css/layout.css';
+
+.element__label {
+  font-size: 10pt;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.image__label {
+  font-size: 10pt;
+  color: var(--color-rhino-60);
+  margin-right: 25px;
+}
