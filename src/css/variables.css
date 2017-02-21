@@ -15,8 +15,9 @@
   --section-border-width: 1px;
 
   /* Spacing */
-  --space-xl: calc(var(--space-lg) * 2);
-  --space-lg: calc(var(--space-sm) * 3);
-  --space-std: 32px;
-  --space-sm: 12px;
+  --space-xl: calc(var(--space-xs) * 16);
+  --space-lg: calc(var(--space-xs) * 9);
+  --space-std: calc(var(--space-xs) * 8);
+  --space-sm: calc(var(--space-xs) * 3);
+  --space-xs: 4px;
 }
