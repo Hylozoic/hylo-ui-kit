@@ -1,7 +1,3 @@
-/*
-  LEJ: I would have thought these were already available as variables are global
-  and they are already included at App and in layout.css used above in Typography ...
-*/
 @import '../../../css/variables.css';
 
 .card {
@@ -18,7 +14,6 @@
 }
 
 .card--no-bottom-border {
-  composes: card;
   border-bottom: 0px;
 }
 

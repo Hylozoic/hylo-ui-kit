@@ -29,7 +29,7 @@ body {
   display: inline;
 }
 
-.menu-item {
+.menu__item {
   display: inline;
   padding: 0 var(--space-sm);
   border-right: solid 1px white;

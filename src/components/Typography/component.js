@@ -9,16 +9,16 @@ export default function Typography (props) {
       <div styleName='section'>
         <div styleName='section__title'>Headers</div>
         <div styleName='section__box'>
-          <StyleCard styleClassName='h-display' name='display'
+          <StyleCard styleClassName='hdr-display' name='display'
             description='Circular Bold / 32pt, -0.5 ch, 36 line / Color: 2C4059'
             sampleKey='short' />
-          <StyleCard styleClassName='h-subheadline' name='h2'
+          <StyleCard styleClassName='hdr-subheadline' name='h2'
             description='Circular Book / 18pt, 0 ch, 22 line / Color: 2C4059'
             sampleKey='short' />
-          <StyleCard styleClassName='h-headline' name='h1'
+          <StyleCard styleClassName='hdr-headline' name='h1'
             description='Circular Medium / 24pt, 0 ch, 28 line / Color: 2C4059'
             sampleKey='short' noBottomBorder />
-          <StyleCard styleClassName='h-minor' name='h3'
+          <StyleCard styleClassName='hdr-minor' name='h3'
             description='Circular Bold / 14pt, 0 ch, 18 line / Color: 2C4059'
             sampleKey='short' noBottomBorder />
         </div>
@@ -26,16 +26,16 @@ export default function Typography (props) {
       <div styleName='section'>
         <div styleName='section__title'>Body Styles</div>
         <div styleName='section__box'>
-          <StyleCard styleClassName='body-drk-lg'
+          <StyleCard styleClassName='bdy-drk-lg'
             description='Circular Book / 18pt, 0 ch, 24 line / Color: 2C4059 80%'
             sampleKey='medium' />
-          <StyleCard styleClassName='body-drk-sm'
+          <StyleCard styleClassName='bdy-drk-sm'
             description='Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 80%'
             sampleKey='medium' />
-          <StyleCard styleClassName='body-lt-lg'
+          <StyleCard styleClassName='bdy-lt-lg'
             description='Circular Book / 17pt, 0 ch, 25 line / Color: 2C4059 60%'
             sampleKey='medium' noBottomBorder />
-          <StyleCard styleClassName='body-lt-sm'
+          <StyleCard styleClassName='bdy-lt-sm'
             description='Circular Book / 15pt, 0 ch, 22 line / Color: 2C4059 60%'
             sampleKey='medium' noBottomBorder />
         </div>

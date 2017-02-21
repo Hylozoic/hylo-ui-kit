@@ -12,8 +12,8 @@ class App extends Component {
           <div styleName='nav'>
             <div styleName='heading'>hylo-ui-kit</div>
             <ul styleName='menu'>
-              <li styleName='menu-item'><Link to='/typography'>Typography</Link></li>
-              <li styleName='menu-item'><Link to='/elements'>Elements</Link></li>
+              <li styleName='menu__item'><Link to='/typography'>Typography</Link></li>
+              <li styleName='menu__item'><Link to='/elements'>Elements</Link></li>
             </ul>
           </div>
           {this.props.children}

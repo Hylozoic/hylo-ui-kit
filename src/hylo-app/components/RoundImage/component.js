@@ -15,7 +15,7 @@ RoundImage.propTypes = {
   size: string
 }
 
-const bgStyle = url => {
+function bgStyle (url) {
   if (!url) return {}
   const escaped = url.replace(/([\(\)])/g, (match, $1) => '\\' + $1) // eslint-disable-line
   return {backgroundImage: `url(${escaped})`}

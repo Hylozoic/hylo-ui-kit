@@ -12,7 +12,7 @@ export default function StyleCard (
 ) {
   const sampleTextOptions = SAMPLE_TEXT_OPTIONS
   const sampleText = children || sample || sampleTextOptions[sampleKey]
-  let styleName = noBottomBorder ? 'card--no-bottom-border' : 'card'
+  let styleName = noBottomBorder ? 'card card--no-bottom-border' : 'card'
   let nameText = '.' + styleClassName
   if (name) nameText = `${name} (.${styleClassName})`
   function handleClick (event) {

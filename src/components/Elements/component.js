@@ -1,6 +1,8 @@
 import React from 'react'
 import RoundImage from '../../hylo-app/components/RoundImage'
 
+const SAMPLE_IMAGE_URL = 'https://d3ngex8q79bk55.cloudfront.net/user/13986/avatar/1444260480878_AxolotlPic.png'
+
 export default function Elements (props) {
   return <div>
     <div styleName='sheet'>
@@ -9,9 +11,9 @@ export default function Elements (props) {
         <div styleName='sheet__flexbox__item'>
           <div styleName='element__label'>Imagery</div>
           <div>
-            <RoundImage url={imageUrl} />
-            <RoundImage url={imageUrl} size='medium' />
-            <RoundImage url={imageUrl} size='small' />
+            <RoundImage url={SAMPLE_IMAGE_URL} />
+            <RoundImage url={SAMPLE_IMAGE_URL} size='medium' />
+            <RoundImage url={SAMPLE_IMAGE_URL} size='small' />
           </div>
           <div>
             <span styleName='image__label'>48px</span>
@@ -29,5 +31,3 @@ export default function Elements (props) {
     </div>
   </div>
 }
-
-const imageUrl = 'https://d3ngex8q79bk55.cloudfront.net/user/13986/avatar/1444260480878_AxolotlPic.png'

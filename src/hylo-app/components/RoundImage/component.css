@@ -1,0 +1,26 @@
+@import '../../css/variables.css';
+
+.image {
+  display: inline-block;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.small {
+  composes: image;
+  width: calc(var(--space-std) - var(--space-xs));
+  height: calc(var(--space-std) - var(--space-xs));
+}
+
+.medium {
+  composes: image;
+  width: var(--space-lg);
+  height: var(--space-lg);
+}
+
+.large {
+  composes: image;
+  width: calc(var(--space-std) + var(--space-sm));
+  height: calc(var(--space-std) + var(--space-sm));
+}
