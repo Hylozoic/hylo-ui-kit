@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import './variables.css';
+
+/* Global Typography */
+
+.display-1, .hdr-display {
+  @apply --font-bold;
+  letter-spacing: -0.5;
+  line-height: 36px;
+  color: var(--color-rhino);
+}
+
+.h1, .hdr-headline {
+  @apply --font-medium;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: var(--color-rhino);
+}
+
+.h2, .hdr-subheadline {
+  @apply --font-regular;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  color: var(--color-rhino);
+}
+
+.h3, .hdr-minor {
+  @apply --font-regular;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: var(--color-rhino);
+}

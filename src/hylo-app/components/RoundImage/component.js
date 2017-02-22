@@ -5,14 +5,19 @@
 
 import React from 'react'
 
-const { string } = React.PropTypes
+const { string, bool } = React.PropTypes
 
-export default function RoundImage ({ url, size = 'large' }) {
-  return <div styleName={size} style={bgStyle(url)} />
+export default function RoundImage ({ url, size = 'large', overlaps }) {
+  let styleName = `image ${size}`
+  if (overlaps) styleName += ' overlaps'
+  return <div styleName={styleName}
+    className='d-inline-block align-middle img-thumbnail rounded-circle'
+    style={bgStyle(url)} />
 }
 RoundImage.propTypes = {
   url: string.isRequired,
-  size: string
+  size: string,
+  overlaps: bool
 }
 
 function bgStyle (url) {

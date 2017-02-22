@@ -8,8 +8,10 @@
 @import '../hylo-app/css/variables.css';
 
 :root {
-  --root-width: 1156px;
-  --sheet-width: calc(var(--root-width) - 120px);
+  --root-width: 1180px;
+
+  /* sheet and section layout */
+  --sheet-width: calc(var(--root-width));
   --sheet-vertical-margin: 28px;
   --sheet-border-radius: 6px;
   --section-border-width: 1px;

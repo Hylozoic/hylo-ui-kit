@@ -106,6 +106,7 @@ module.exports = {
         exclude: [
           /\.html$/,
           /\.(js|jsx)$/,
+          /\.scss$/,
           /\.css$/,
           /\.json$/,
           /\.svg$/
@@ -119,7 +120,7 @@ module.exports = {
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
-        include: paths.appSrc,
+        include: [paths.appNodeModules, paths.appSrc],
         loader: 'babel',
         query: {
           // This is a feature of `babel-loader` for webpack (not Babel itself).
@@ -127,6 +128,12 @@ module.exports = {
           // directory for faster rebuilds.
           cacheDirectory: true
         }
+      },
+      // SASS (SCSS) Loader
+      {
+        test: /\.scss$/,
+        include: [paths.appNodeModules, paths.appSrc],
+        loaders: ['style', 'css', 'sass']
       },
       // Use CSS modules for all CSS files without the *.global.css extension
       // "postcss" loader applies autoprefixer to our CSS.

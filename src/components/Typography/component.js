@@ -85,7 +85,7 @@ export default function Typography (props) {
     </div>
     <div styleName='sheet'>
       <div styleName='sheet__title'>Colors</div>
-      <div styleName='color-section-title'>7 Shades of grey:</div>
+      <div styleName='colorSection-title'>7 Shades of grey:</div>
       <div styleName='sheet__flexbox'>
         <ColorSample color='#2C4059' colorName='rhino' description='Backgrounds, Header text styles' />
         <ColorSample color='#2C4059' opacity='0.8' colorName='rhino-80' description='Body black text styles' />
@@ -96,9 +96,9 @@ export default function Typography (props) {
         <ColorSample color='#FAFBFC' colorName='athens-gray' textColor='#879BAB' borderColor='#DCDCDC' description='Divider background, grey blocks background' />
       </div>
       <div styleName='sheet__flexbox'>
-        <div styleName='color-section'>
-          <div styleName='color-section-title'>Active Colors</div>
-          <div styleName='color-section-description'>
+        <div styleName='colorSection'>
+          <div styleName='colorSection-title'>Active Colors</div>
+          <div styleName='colorSection-description'>
             Colors for interactive elements: <br />
             - Fills for buttons, inputs, notifications, bars, etc <br />
             - Status indicators (error, success, etc) <br />
@@ -112,9 +112,9 @@ export default function Typography (props) {
         <ColorSample color='#FE6848' colorName='persimmon' />
       </div>
       <div styleName='sheet__flexbox'>
-        <div styleName='color-section'>
-          <div styleName='color-section-title'>Highlight Colors</div>
-          <div styleName='color-section-description'>
+        <div styleName='colorSection'>
+          <div styleName='colorSection-title'>Highlight Colors</div>
+          <div styleName='colorSection-description'>
             Can be used only for labels and backgrounds
           </div>
         </div>
@@ -125,9 +125,9 @@ export default function Typography (props) {
         <ColorSample color='#FFE1DA' colorName='peach-schnapps' textColor='#FE6848' />
       </div>
       <div styleName='sheet__flexbox'>
-        <div styleName='color-section'>
-          <div styleName='color-section-title'>System Colors</div>
-          <div styleName='color-section-description'>
+        <div styleName='colorSection'>
+          <div styleName='colorSection-title'>System Colors</div>
+          <div styleName='colorSection-description'>
             To be used for Success, Warning and Error Messages
           </div>
         </div>
