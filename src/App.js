@@ -2,10 +2,7 @@
 import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 import { Link } from 'react-router'
-import styles from './App.css'
-
-// LEJ: Inserting bootstrap for now
-import './css/bootstrap-setup.scss'
+import styles from './App.scss'
 
 class App extends Component {
   render () {

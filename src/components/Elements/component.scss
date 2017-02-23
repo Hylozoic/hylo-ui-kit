@@ -1,6 +1,3 @@
-@import '../../css/variables.css';
-@import '../../css/layout.css';
-
 .element__label {
   font-size: 10pt;
   font-weight: 400;
@@ -9,6 +6,6 @@
 
 .image__label {
   font-size: 10pt;
-  color: var(--color-rhino-60);
+  color: $color-rhino-60;
   margin-right: 25px;
 }

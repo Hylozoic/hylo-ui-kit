@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import hyloAppTypographyStyles from '../../../hylo-app/css/typography.css'
+import hyloAppTypographyStyles from '../../../hylo-app/css/typography.scss'
 
 const SAMPLE_TEXT_OPTIONS = {
   short: 'Five quacking zephyrs jolt my wax bed.',

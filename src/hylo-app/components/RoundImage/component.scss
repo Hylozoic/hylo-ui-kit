@@ -1,0 +1,31 @@
+.image {
+  background-position: center;
+  background-size: cover;
+  border-color: $color-white;
+  /*display: inline-block;*/
+  /*border-radius: 50%;*/
+  /*vertical-align: middle;*/
+}
+
+.overlaps {
+  margin-left: -15px;
+}
+
+.overlaps:first-child {
+  margin-left: 0px;
+}
+
+.small {
+  width: calc($space-std - $space-xs);
+  height: calc($space-std - $space-xs);
+}
+
+.medium {
+  width: $space-lg;
+  height: $space-lg;
+}
+
+.large {
+  width: calc($space-std + $space-sm);
+  height: calc($space-std + $space-sm);
+}

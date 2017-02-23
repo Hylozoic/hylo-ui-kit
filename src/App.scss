@@ -1,0 +1,45 @@
+body {
+  @include font-regular;
+  background-color: $color-caribbean-green;
+}
+
+// ./css/layout.scss
+.nav {
+  // composes: sheet;
+  background-color: transparent;
+  width: calc($root-width + 24px);
+  padding-bottom: $space-sm;
+  padding-top: $space-sm;
+}
+
+.heading {
+  // composes: sheet__title;
+  display: inline;
+  margin-right: $space-std;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.menu__item {
+  display: inline;
+  padding: 0 $space-sm;
+  border-right: solid 1px white;
+  &:first-child {
+    padding-left: 0px;
+  }
+  &:last-child {
+    border: 0px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-shadow: 1px 1px $color-rhino;
+    }
+  }
+}

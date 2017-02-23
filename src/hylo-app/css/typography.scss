@@ -1,85 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
-@import './variables.css';
 
 /* Global Typography */
 
 .hdr-display {
-  @apply --font-bold;
+  @include font-bold;
   font-size: 32px;
   letter-spacing: -0.5;
   line-height: 36px;
-  color: var(--color-rhino);
+  color: $color-rhino;
 }
 
 .hdr-headline {
-  @apply --font-medium;
+  @include font-medium;
   font-size: 24px;
   letter-spacing: 0;
   line-height: 28px;
-  color: var(--color-rhino);
+  color: $color-rhino;
 }
 
 .hdr-subheadline {
-  @apply --font-regular;
+  @include font-regular;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 22px;
-  color: var(--color-rhino);
+  color: $color-rhino;
 }
 
 .hdr-minor {
-  @apply --font-regular;
+  @include font-regular;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 18px;
-  color: var(--color-rhino);
+  color: $color-rhino;
 }
 
 /* Body */
 
 .bdy-drk-lg {
-  @apply --font-regular;
-  color: var(--color-rhino-80);
+  @include font-regular;
+  color: $color-rhino-80;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 24px;
 }
 
 .bdy-lt-lg {
-  @apply --font-regular;
-  color: var(--color-rhino-60);
+  @include font-regular;
+  color: $color-rhino-60;
   font-size: 17px;
   letter-spacing: 0;
   line-height: 25px;
 }
 
 .bdy-drk-sm {
-  @apply --font-regular;
-  color: var(--color-rhino-80);
+  @include font-regular;
+  color: $color-rhino-80;
   font-size: 15px;
   letter-spacing: 0;
   line-height: 22px;
 }
 
 .bdy-lt-sm {
-  @apply --font-regular;
-  color: var(--color-rhino-60);
+  @include font-regular;
+  color: $color-rhino-60;
   font-size: 15px;
   letter-spacing: 0;
   line-height: 22px;
 }
 
 .caption-drk-lg{
-  @apply --font-regular;
-  color: var(--color-rhino-80);
+  @include font-regular;
+  color: $color-rhino-80;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 18px;
 }
 
 .caption-lt-lg {
-  @apply --font-regular;
-  color: var(--color-rhino-60);
+  @include font-regular;
+  color: $color-rhino-60;
   font-size: 13px;
   letter-spacing: 0;
   line-height: 19px;
@@ -88,8 +87,8 @@
 /* Misc */
 
 .tag {
-  @apply --font-bold;
-  color: var(--color-nepal);
+  @include font-bold;
+  color: $color-nepal;
   font-size: 10px;
   letter-spacing: 0.6;
   line-height: 14px;
@@ -97,32 +96,32 @@
 }
 
 .button {
-  @apply --font-medium;
-  color: var(--color-caribbean-green);
+  @include font-medium;
+  color: $color-caribbean-green;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 20px;
 }
 
 .button-sm {
-  @apply --font-bold;
-  color: var(--color-caribbean-green);
+  @include font-bold;
+  color: $color-caribbean-green;
   font-size: 10px;
   letter-spacing: 0.6;
   line-height: 14px;
 }
 
 .cards {
-  @apply --font-bold;
-  color: var(--color-rhino);
+  @include font-bold;
+  color: $color-rhino;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 20px;
 }
 
 .timestamp {
-  @apply --font-regular;
-  color: var(--color-rhino-60);
+  @include font-regular;
+  color: $color-rhino-60;
   font-size: 13px;
   letter-spacing: 0;
   line-height: 16px;

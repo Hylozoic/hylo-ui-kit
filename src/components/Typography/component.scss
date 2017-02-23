@@ -1,6 +1,3 @@
-@import '../../css/variables.css';
-@import '../../css/layout.css';
-
 .colorSection {
   flex-grow: 4;
   flex-shrink: 0;
@@ -14,12 +11,12 @@
   text-transform: uppercase;
   font-size: 8pt;
   font-weight: 600;
-  color: var(--color-rhino-60);
+  color: $color-rhino-60;
   margin-bottom: 20px;
 }
 
 .colorSection-description {
   font-size: 10pt;
-  color: var(--color-rhino-80);
+  color: $color-rhino-80;
   font-weight: 400;
 }

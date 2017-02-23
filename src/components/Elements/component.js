@@ -5,10 +5,10 @@ const SAMPLE_IMAGE_URL = 'https://d3ngex8q79bk55.cloudfront.net/user/13986/avata
 
 export default function Elements (props) {
   return <div>
-    <div styleName='sheet'>
-      <div styleName='sheet__title'>Elements</div>
-      <div styleName='sheet__flexbox'>
-        <div styleName='sheet__flexbox__item'>
+    <div className='sheet'>
+      <div className='sheet__title'>Elements</div>
+      <div className='sheet__flexbox'>
+        <div className='sheet__flexbox__item'>
           <div styleName='element__label'>Imagery</div>
           <div>
             <RoundImage url={SAMPLE_IMAGE_URL} />
@@ -21,10 +21,10 @@ export default function Elements (props) {
             <span styleName='image__label'>28px</span>
           </div>
         </div>
-        <div styleName='sheet__flexbox__item'>
+        <div className='sheet__flexbox__item'>
           <div styleName='element__label'>Buttons / 40px</div>
         </div>
-        <div styleName='sheet__flexbox__item'>
+        <div className='sheet__flexbox__item'>
           <div styleName='element__label'>Buttons / 32px</div>
         </div>
       </div>

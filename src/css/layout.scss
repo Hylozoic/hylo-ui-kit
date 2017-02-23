@@ -1,20 +1,18 @@
-@import './variables.css';
-
 /* Layout ("sheet") style */
 
 .sheet {
-  background-color: var(--color-white);
-  width: var(--sheet-width);
-  margin: var(--sheet-vertical-margin) auto;
-  padding: var(--space-xl);
-  border-radius: var(--sheet-border-radius);
+  background-color: $color-white;
+  width: $sheet-width;
+  margin: $sheet-vertical-margin auto;
+  padding: $space-xl;
+  border-radius: $sheet-border-radius;
 }
 
 .sheet__title {
-  @apply --font-bold;
+  @include font-bold;
   padding-top: 10px;
   font-size: 24pt;
-  margin-bottom: var(--space-xl);
+  margin-bottom: $space-xl;
   color: #2C4059;
 }
 
@@ -33,13 +31,13 @@
 }
 
 .section {
-  margin-bottom: calc(var(--space-lg) + 10px);
+  margin-bottom: calc($space-lg + 10px);
   &__box {
     display: flex;
     flex-flow: row wrap;
     background-color: #fafbfc;
-    border-radius: var(--sheet-border-radius);
-    border: var(--section-border-width) solid #808c9b;
+    border-radius: $sheet-border-radius;
+    border: $section-border-width solid #808c9b;
   }
   &:nth-last-child(1) {
     margin-bottom: 0;
@@ -52,12 +50,11 @@
 .section__title {
   margin-top: 0px;
   padding-top: 0px;
-  margin-bottom: var(--space-lg);
+  margin-bottom: $space-lg;
   color: #2C4059;
   opacity: 0.6;
 }
 
 .section__title--collapsed {
-  composes: section__title;
-  margin-bottom: var(--space-sm);
+  margin-bottom: $space-sm;
 }
