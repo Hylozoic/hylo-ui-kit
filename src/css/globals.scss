@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
 $font-family-base: 'Poppins', sans-serif;
 
 $root-width: 1180px;
@@ -15,5 +17,5 @@ $space-std: calc(#{$space-xs} * 8);
 $space-lg: calc(#{$space-xs} * 9);
 $space-xl: calc(#{$space-xs} * 16);
 
-// @import './layout';
-// @import './typography';
+// @import 'layout';
+// @import 'typography';
