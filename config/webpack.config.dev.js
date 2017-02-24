@@ -77,7 +77,7 @@ module.exports = {
       },
       // Global SASS Resources
       {
-        test: /\.scss$/,
+        test: /\.(css|scss)$/,
         include: [
           paths.appSrc + '/css',
           paths.appSrc + '/hylo-app/css'
@@ -93,7 +93,6 @@ module.exports = {
       // CSS Modules for all SASS files not in /css directories
       {
         test: /\.(css|scss)$/,
-        include: [paths.appSrc],
         exclude: [
           paths.appSrc + '/css',
           paths.appSrc + '/hylo-app/css'

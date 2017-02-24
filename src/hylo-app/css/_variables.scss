@@ -37,19 +37,14 @@ $color-amaranth: #EE4266;
 $color-yello-orange: #FFB949;
 
 // Fonts
-$font-base: 'Poppins', sans-serif;
-
 @mixin font-regular {
-  font-family: $font-base;
-  font-weight: 300;
+  font-family: 'Circular Book', sans-serif;
 }
 
 @mixin font-medium {
-  font-family: $font-base;
-  font-weight: 400;
+  font-family: 'Circular Medium', sans-serif;
 }
 
 @mixin font-bold {
-  font-family: $font-base;
-  font-weight: 500;
+  font-family: 'Circular bold', sans-serif;
 }

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import hyloAppTypographyStyles from '../../../hylo-app/css/typography.scss'
+import hyloAppTypographyStyles from '../../../hylo-app/typography.scss'
 
 const SAMPLE_TEXT_OPTIONS = {
   short: 'Five quacking zephyrs jolt my wax bed.',
@@ -10,6 +10,7 @@ const SAMPLE_TEXT_OPTIONS = {
 export default function StyleCard (
   { styleClassName, name, description, sampleKey, sample, children, noBottomBorder, ...props }
 ) {
+  console.log(hyloAppTypographyStyles)
   const sampleTextOptions = SAMPLE_TEXT_OPTIONS
   const sampleText = children || sample || sampleTextOptions[sampleKey]
   let styleName = noBottomBorder ? 'card card--no-bottom-border' : 'card'
