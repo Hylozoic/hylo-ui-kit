@@ -4,6 +4,12 @@
   height: 40px;
   line-height: 40px;
   display: inline-block;
+  &.small {
+    padding: 0px 30px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 10pt;
+  }
 }
 
 .narrow {

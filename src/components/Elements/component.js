@@ -11,7 +11,7 @@ export default function Elements (props) {
       <div className='sheet__flexbox'>
         <div>
           <div styleName='element__label'>Imagery</div>
-          <div styleName='images'>
+          <div styleName='images__card'>
             <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' />
             <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' size='medium' className='mr-3 mb-2' />
             <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' size='small' className='mr-3 mb-2' />
@@ -22,7 +22,7 @@ export default function Elements (props) {
             <span styleName='image__label'>28px</span>
           </div>
         </div>
-        <div>
+        <div styleName='buttons__card'>
           <div styleName='element__label'>Buttons / 40px</div>
           <div styleName='buttonRow'>
             <div styleName='buttonRow--label'>Normal</div>
@@ -45,6 +45,18 @@ export default function Elements (props) {
         </div>
         <div>
           <div styleName='element__label'>Buttons / 32px</div>
+          <div styleName='smallButtonRow'>
+            <Button label='Button' styleName='buttonMargin' small />
+            <Button label='Button' color='purple' styleName='buttonMargin' small />
+          </div>
+          <div styleName='smallButtonRow'>
+            <Button label='Button' styleName='buttonMargin' hover small />
+            <Button label='Button' color='purple' styleName='buttonMargin' hover small />
+          </div>
+          <div styleName='smallButtonRow'>
+            <Button label='Button' styleName='buttonMargin' clicked small />
+            <Button label='Button' color='purple' styleName='buttonMargin' clicked small />
+          </div>
         </div>
       </div>
     </div>
