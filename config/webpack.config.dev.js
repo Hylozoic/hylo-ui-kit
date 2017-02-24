@@ -95,6 +95,7 @@ module.exports = {
           'css?modules&importLoaders=2&localIdentName=[name]__[local]__[hash:base64:5]',
           'postcss',
           'sass?sourceMap',
+          'sass-resources'
         ]
       },
 
@@ -139,7 +140,11 @@ module.exports = {
     ]
   },
 
-  // sassResources: './css/bootstrap-setup.css',
+  sassResources: [
+    '/Users/loren/hylo/hylo-ui-kit/src/hylo-app/css/_variables.scss',
+    '/Users/loren/hylo/hylo-ui-kit/src/css/globals.scss'
+  ],
+
   // sassResources: './node_modules/bootstrap/scss/**/*.scss',
 
   // We use PostCSS for autoprefixing only.
@@ -196,5 +201,3 @@ module.exports = {
     tls: 'empty'
   }
 }
-
-console.log(paths.appNodeModules + '/bootstrap/scss/bootstrap.scss')

@@ -1,22 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
-
-$font-family-base: 'Poppins', sans-serif;
-
-$root-width: 1180px;
-
-/* sheet and section layout */
-$sheet-width: calc($root-width);
-$sheet-vertical-margin: 28px;
-$sheet-border-radius: 6px;
-$section-border-width: 1px;
-
-/* Spacing */
-$space-xl: calc($space-xs * 16);
-$space-lg: calc($space-xs * 9);
-$space-std: calc($space-xs * 8);
-$space-sm: calc($space-xs * 3);
-$space-xs: 4px;
-
 $body-bg: #0DC3A0;
 $display4-size: 32px;
 $font-size-h1: 24px;
@@ -24,6 +5,4 @@ $font-size-h2: 18px;
 $font-size-h3: 14px;
 
 // @import '../../node_modules/bootstrap/scss/bootstrap';
-
-@import './layout';
-@import './typography';
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');

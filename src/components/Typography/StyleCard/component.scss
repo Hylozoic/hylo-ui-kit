@@ -1,7 +1,9 @@
+@import '../../../css/globals';
+
 .card {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: calc(($sheet-width / 2) - $space-std * 6);
+  flex-basis: calc((#{$sheet-width} / 2) - #{$space-std} * 6);
   padding: $space-std 0;
   margin: 0 $space-std;
   box-sizing: border-box;

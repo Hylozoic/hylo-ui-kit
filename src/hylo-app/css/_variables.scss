@@ -1,9 +1,9 @@
 /* Spacing */
-$space-xl: calc($space-xs * 18);
-$space-lg: calc($space-xs * 9);
-$space-std: calc($space-xs * 8);
-$space-sm: calc($space-xs * 3);
 $space-xs: 4px;
+$space-sm: calc(#{$space-xs} * 3);
+$space-std: calc(#{$space-xs} * 8);
+$space-lg: calc(#{$space-xs} * 9);
+$space-xl: calc(#{$space-xs} * 18);
 
 /* Colors
    For now standardized on using "Name that Color" naming:
@@ -37,7 +37,6 @@ $color-amaranth: #EE4266;
 $color-yello-orange: #FFB949;
 
 /* Fonts */
-$font-base: 'Poppins', sans-serif;
 $font-base: 'Poppins', sans-serif;
 
 @mixin font-regular {

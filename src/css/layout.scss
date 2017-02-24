@@ -1,5 +1,5 @@
 /* Layout ("sheet") style */
-
+:global {
 .sheet {
   background-color: $color-white;
   width: $sheet-width;
@@ -31,7 +31,7 @@
 }
 
 .section {
-  margin-bottom: calc($space-lg + 10px);
+  margin-bottom: calc(#{$space-lg} + 10px);
   &__box {
     display: flex;
     flex-flow: row wrap;
@@ -57,4 +57,5 @@
 
 .section__title--collapsed {
   margin-bottom: $space-sm;
+}
 }

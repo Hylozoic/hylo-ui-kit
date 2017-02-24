@@ -1,3 +1,5 @@
+@import '../../css/variables';
+
 .image {
   background-position: center;
   background-size: cover;
@@ -16,8 +18,8 @@
 }
 
 .small {
-  width: calc($space-std - $space-xs);
-  height: calc($space-std - $space-xs);
+  width: calc(#{$space-std} - #{$space-xs});
+  height: calc(#{$space-std} - #{$space-xs});
 }
 
 .medium {
@@ -26,6 +28,6 @@
 }
 
 .large {
-  width: calc($space-std + $space-sm);
-  height: calc($space-std + $space-sm);
+  width: calc(#{$space-std} + #{$space-sm});
+  height: calc(#{$space-std} + #{$space-sm});
 }
