@@ -4,13 +4,33 @@
   margin-bottom: 30px;
 }
 
+.images {
+  margin-right: 70px;
+}
+
 .image__label {
   font-size: 10pt;
   color: $color-rhino-60;
   margin-right: 40px;
 }
 
-.imagePad {
+.imageMargin {
   margin-right: 30px;
   margin-bottom: 15px;
+}
+
+.buttonRow {
+  margin-bottom: 15px;
+}
+
+.buttonRow--label {
+    display: inline-block;
+    width: 45px;
+    margin-right: 12px;
+    font-size: 10pt;
+    color: $color-rhino-50;
+}
+
+.buttonMargin {
+  margin-right: 20px;
 }

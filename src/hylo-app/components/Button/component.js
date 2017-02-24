@@ -3,21 +3,18 @@ import cx from 'classnames'
 
 const { string, bool } = React.PropTypes
 
-export default function Button ({ url, size = 'large', overlaps, className }) {
-  let styleName = cx('image', size, {overlaps})
+export default function Button ({ label, color = 'green', hover, clicked, narrow, className }) {
+  let styleName = cx('button', color, {hover, clicked, narrow})
   return <div styleName={styleName}
-    className={cx(className, 'd-inline-block align-top img-thumbnail rounded-circle')}
-    style={bgStyle(url)} />
+    className={className}>
+    {label}
+  </div>
 }
 Button.propTypes = {
-  url: string.isRequired,
-  size: string,
+  label: string.isRequired,
+  colorStyle: string,
   className: string,
-  overlaps: bool
-}
-
-function bgStyle (url) {
-  if (!url) return {}
-  const escaped = url.replace(/([\(\)])/g, (match, $1) => '\\' + $1) // eslint-disable-line
-  return {backgroundImage: `url(${escaped})`}
+  hover: bool,
+  clicked: bool,
+  narrow: bool
 }

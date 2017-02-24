@@ -1,5 +1,6 @@
 import React from 'react'
 import RoundImage from '../../hylo-app/components/RoundImage'
+import Button from '../../hylo-app/components/Button'
 
 const SAMPLE_IMAGE_URL = 'https://d3ngex8q79bk55.cloudfront.net/user/13986/avatar/1444260480878_AxolotlPic.png'
 
@@ -8,12 +9,12 @@ export default function Elements (props) {
     <div className='sheet'>
       <div className='sheet__title'>Elements</div>
       <div className='sheet__flexbox'>
-        <div className='sheet__flexbox__item'>
+        <div>
           <div styleName='element__label'>Imagery</div>
-          <div>
-            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imagePad' />
-            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imagePad' size='medium' className='mr-3 mb-2' />
-            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imagePad' size='small' className='mr-3 mb-2' />
+          <div styleName='images'>
+            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' />
+            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' size='medium' className='mr-3 mb-2' />
+            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' size='small' className='mr-3 mb-2' />
           </div>
           <div>
             <span styleName='image__label'>48px</span>
@@ -21,10 +22,28 @@ export default function Elements (props) {
             <span styleName='image__label'>28px</span>
           </div>
         </div>
-        <div className='sheet__flexbox__item'>
+        <div>
           <div styleName='element__label'>Buttons / 40px</div>
+          <div styleName='buttonRow'>
+            <div styleName='buttonRow--label'>Normal</div>
+            <Button label='Button' styleName='buttonMargin' />
+            <Button label='Button' color='purple' styleName='buttonMargin' />
+            <Button label='Button' color='green-white' styleName='buttonMargin' narrow />
+          </div>
+          <div styleName='buttonRow'>
+            <div styleName='buttonRow--label'>Hover</div>
+            <Button label='Button' styleName='buttonMargin' hover />
+            <Button label='Button' color='purple' styleName='buttonMargin' hover />
+            <Button label='Button' color='green-white' styleName='buttonMargin' narrow hover />
+          </div>
+          <div styleName='buttonRow'>
+            <div styleName='buttonRow--label'>Clicked</div>
+            <Button label='Button' styleName='buttonMargin' clicked />
+            <Button label='Button' color='purple' styleName='buttonMargin' clicked />
+            <Button label='Button' color='green-white' styleName='buttonMargin' narrow clicked />
+          </div>
         </div>
-        <div className='sheet__flexbox__item'>
+        <div>
           <div styleName='element__label'>Buttons / 32px</div>
         </div>
       </div>

@@ -1,28 +1,75 @@
-.image {
-  background-position: center;
-  background-size: cover;
-  border-color: $color-white;
+.button {
+  padding: 0px 40px;
+  border-radius: 25px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
 }
 
-.overlaps {
-  margin-left: -15px;
+.narrow {
+  padding: 0px 25px;
 }
 
-.overlaps:first-child {
-  margin-left: 0px;
+.green {
+  background-color: $color-caribbean-green;
+  color: $color-white;
+  &.hover {
+    background-color: lighten($color-caribbean-green, 2%);
+  }
+  &:hover {
+    background-color: lighten($color-caribbean-green, 2%);
+  }
+  &.clicked {
+    background-color: darken($color-caribbean-green, 2%);
+  }
+  &:active {
+    background-color: darken($color-caribbean-green, 2%);
+  }
 }
 
-.small {
-  width: calc(#{$space-std} - #{$space-xs});
-  height: calc(#{$space-std} - #{$space-xs});
+.purple {
+  background-color: $color-medium-purple;
+  color: $color-white;
+  &.hover {
+    background-color: lighten($color-medium-purple, 2%);
+  }
+  &:hover {
+    background-color: lighten($color-medium-purple, 2%);
+  }
+  &.clicked {
+    background-color: darken($color-medium-purple, 2%);
+  }
+  &:active {
+    background-color: darken($color-medium-purple, 2%);
+  }
 }
 
-.medium {
-  width: $space-lg;
-  height: $space-lg;
+.green-white {
+  color: $color-caribbean-green;
+  border: 1px solid $color-alto;
+  &.hover {
+    background-color: $color-polar;
+    border-color: $color-caribbean-green;
+  }
+  &:hover {
+    background-color: $color-polar;
+    border-color: $color-caribbean-green;
+  }
+  &.clicked {
+    background-color: $color-ziggurat;
+    border-color: transparent;
+  }
+  &:active {
+    background-color: $color-ziggurat;
+    border-color: transparent;
+  }
 }
 
-.large {
-  width: calc(#{$space-std} + #{$space-sm});
-  height: calc(#{$space-std} + #{$space-sm});
+
+.hover {
+  display: inline-block;
+}
+
+.clicked {
+  display: inline-block;
 }
