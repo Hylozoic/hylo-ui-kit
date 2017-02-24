@@ -1,3 +1,15 @@
+
+## Webpack CSS Loaders Explanation
+* **sass-resources** makes SASS variables from designated files (see "sassResources" key in webpack config) available
+* **sass** complies SASS files
+* **postcss** does all the post css things ("postcss" in webpack config)
+* **css** loader resolves paths in CSS and adds assets as dependencies.
+* **style** loader turns CSS either into a file or a style tag:
+  - in prod, a single bundle.css file is generated
+  - in dev "style" tags are created in header to enables easy in-browser editing of CSS
+
+--- 
+
 # Hylo UI Kit
 
 A living stylesheet derived from the mock-ups for hylo-app.

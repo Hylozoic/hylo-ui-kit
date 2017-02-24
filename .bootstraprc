@@ -44,7 +44,7 @@ preBootstrapCustomizations: ./src/css/bootstrap-setup.scss
 # Import your custom styles here
 # Usually this endpoint-file contains list of @imports of your application styles
 #
-appStyles: ./src/css/globals.scss
+appStyles: ./src/css/global.scss
 
 ### Bootstrap styles
 styles:
@@ -100,15 +100,4 @@ styles:
   utilities-responsive: true
 
 ### Bootstrap scripts
-scripts:
-  alert: false
-  button: false
-  carousel: false
-  collapse: false
-  dropdown: false
-  modal: false
-  popover: false
-  scrollspy: false
-  tab: false
-  tooltip: false
-  util: false
+scripts: false

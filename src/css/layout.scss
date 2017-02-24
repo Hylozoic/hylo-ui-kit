@@ -1,5 +1,4 @@
 /* Layout ("sheet") style */
-:global {
 .sheet {
   background-color: $color-white;
   width: $sheet-width;
@@ -57,5 +56,4 @@
 
 .section__title--collapsed {
   margin-bottom: $space-sm;
-}
 }

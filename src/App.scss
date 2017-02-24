@@ -1,21 +1,12 @@
-@import './css/layout.scss';
-
-body {
-  @include font-regular;
-  background-color: $color-caribbean-green;
-}
-
-// ./css/layout.scss
 .nav {
-  // composes: sheet from './css/layout';
   background-color: transparent;
   width: calc(#{$root-width} + 24px);
-  padding-bottom: $space-sm;
-  padding-top: $space-sm;
+  padding: $space-sm;
+  padding-bottom: 0;
+  margin: 0 auto;
 }
 
 .heading {
-  // composes: sheet__title;
   display: inline;
   margin-right: $space-std;
 }

@@ -24,8 +24,6 @@ module.exports = {
 
   entry: [
     require.resolve('react-dev-utils/webpackHotDevClient'),
-    'tether',
-    'bootstrap-loader',
     require.resolve('./polyfills'),
     paths.appIndexJs
   ],
@@ -52,6 +50,7 @@ module.exports = {
       }
     ],
     loaders: [
+      // Static resources loader
       {
         exclude: [
           /\.html$/,
@@ -67,6 +66,7 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]'
         }
       },
+      // Babel loader
       {
         test: /\.(js|jsx)$/,
         include: [paths.appNodeModules, paths.appSrc],
@@ -75,54 +75,37 @@ module.exports = {
           cacheDirectory: true
         }
       },
-
-      {
-        test: /\.css$/,
-        include: [paths.appNodeModules, paths.appSrc],
-        loaders: [
-          'style?sourceMap',
-          // 'css?modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-          'css?modules&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:5]',
-          'postcss'
-        ]
-      },
+      // Global SASS Resources
       {
         test: /\.scss$/,
-        include: [paths.appNodeModules, paths.appSrc],
+        include: [
+          paths.appSrc + '/css',
+          paths.appSrc + '/hylo-app/css'
+        ],
         loaders: [
           'style?sourceMap',
-          // 'css?modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-          'css?modules&importLoaders=2&localIdentName=[name]__[local]__[hash:base64:5]',
+          'css',
           'postcss',
           'sass?sourceMap',
           'sass-resources'
         ]
       },
-
-      // SASS (SCSS) Loader
-      // {
-      //   test: /\.scss$/,
-      //   include: [paths.appNodeModules, paths.appSrc],
-      //   loaders: ['style', 'css', 'sass']
-      // },
-      // Use CSS modules for all CSS files without the *.global.css extension
-      // "postcss" loader applies autoprefixer to our CSS.
-      // "css" loader resolves paths in CSS and adds assets as dependencies.
-      // "style" loader turns CSS into JS modules that inject <style> tags.
-      // In production, we use a plugin to extract that CSS to a file, but
-      // in development "style" loader enables hot editing of CSS.
-      // RFC: replaced the default for react css-modules, as per https://github.com/gajus/react-css-modules
-      // {
-      //   test: /\.(css|scss)$/,
-      //   include: [paths.appNodeModules, paths.appSrc],
-      //   loaders: [
-      //     'style?sourceMap',
-      //     'css?modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-      //     'postcss',
-      //     'sass?sourceMap',
-      //     'sass-resources'
-      //   ]
-      // },
+      // CSS Modules for all SASS files not in /css directories
+      {
+        test: /\.(css|scss)$/,
+        include: [paths.appSrc],
+        exclude: [
+          paths.appSrc + '/css',
+          paths.appSrc + '/hylo-app/css'
+        ],
+        loaders: [
+          'style?sourceMap',
+          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          'postcss',
+          'sass?sourceMap',
+          'sass-resources'
+        ]
+      },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
       {
@@ -140,14 +123,12 @@ module.exports = {
     ]
   },
 
+  // Define global SASS variables in css/globals/variables (these are the only variables we currently use)
   sassResources: [
-    '/Users/loren/hylo/hylo-ui-kit/src/hylo-app/css/_variables.scss',
-    '/Users/loren/hylo/hylo-ui-kit/src/css/globals.scss'
+    paths.appSrc + '/hylo-app/css/_variables.scss',
+    paths.appSrc + '/css/_variables.scss'
   ],
 
-  // sassResources: './node_modules/bootstrap/scss/**/*.scss',
-
-  // We use PostCSS for autoprefixing only.
   postcss: function () {
     return [
       // require('postcss-nested'),

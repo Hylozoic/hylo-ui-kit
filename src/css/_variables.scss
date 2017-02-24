@@ -1,0 +1,25 @@
+// Hylo UI-Kit
+
+// -- Spacing
+$space-xs: 4px;
+$space-sm: calc(#{$space-xs} * 3);
+$space-std: calc(#{$space-xs} * 8);
+$space-lg: calc(#{$space-xs} * 9);
+$space-xl: calc(#{$space-xs} * 16);
+
+// -- Layout
+$font-family-base: 'Poppins', sans-serif;
+$root-width: 1180px;
+
+// -- Sheet and section layout
+$sheet-width: $root-width;
+$sheet-vertical-margin: 28px;
+$sheet-border-radius: 6px;
+$section-border-width: 1px;
+
+// Bootstrap
+$body-bg: #0DC3A0;
+$display4-size: 32px;
+$font-size-h1: 24px;
+$font-size-h2: 18px;
+$font-size-h3: 14px;

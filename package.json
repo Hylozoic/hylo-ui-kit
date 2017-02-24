@@ -47,7 +47,7 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.2",
+    "bootstrap": "4.0.0-alpha.6",
     "bootstrap-loader": "1.0.10",
     "node-sass": "^4.5.0",
     "normalize.css": "^5.0.0",

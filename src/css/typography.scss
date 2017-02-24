@@ -1,6 +1,6 @@
-@import '../hylo-app/css/variables';
-
 /* Global Typography */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
 .display-1, .hdr-display {
   @include font-bold;
