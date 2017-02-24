@@ -11,9 +11,9 @@ export default function Elements (props) {
         <div className='sheet__flexbox__item'>
           <div styleName='element__label'>Imagery</div>
           <div>
-            <RoundImage url={SAMPLE_IMAGE_URL} />
-            <RoundImage url={SAMPLE_IMAGE_URL} size='medium' />
-            <RoundImage url={SAMPLE_IMAGE_URL} size='small' />
+            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imagePad' />
+            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imagePad' size='medium' className='mr-3 mb-2' />
+            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imagePad' size='small' className='mr-3 mb-2' />
           </div>
           <div>
             <span styleName='image__label'>48px</span>
