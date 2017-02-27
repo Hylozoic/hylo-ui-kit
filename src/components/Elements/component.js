@@ -13,8 +13,8 @@ export default function Elements (props) {
           <div styleName='element__label'>Imagery</div>
           <div styleName='images__card'>
             <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' />
-            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' size='medium' className='mr-3 mb-2' />
-            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' size='small' className='mr-3 mb-2' />
+            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' medium />
+            <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' small />
           </div>
           <div>
             <span styleName='image__label'>48px</span>

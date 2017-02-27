@@ -8,17 +8,19 @@ import cx from 'classnames'
 
 const { string, bool } = React.PropTypes
 
-export default function RoundImage ({ url, size = 'large', overlaps, className }) {
-  let styleName = cx('image', size, {overlaps})
+export default function RoundImage ({ url, small, medium, overlaps, classNameProp: className }) {
+  let styleName = cx('image', { overlaps, small, medium })
+  className = cx(className, 'd-inline-block align-top img-thumbnail rounded-circle')
   return <div styleName={styleName}
-    className={cx(className, 'd-inline-block align-top img-thumbnail rounded-circle')}
+    className={className}
     style={bgStyle(url)} />
 }
 RoundImage.propTypes = {
   url: string.isRequired,
-  size: string,
-  className: string,
-  overlaps: bool
+  small: bool,
+  medium: bool,
+  overlaps: bool,
+  className: string
 }
 
 function bgStyle (url) {

@@ -19,8 +19,8 @@ function CardBlock ({ children }) {
 
 function CardHeader ({person: { url, name }}) {
   return <CardFlex
-    lChildren={<RoundImage url={url} size='small' />}
-    rChildren={<RoundImage url={url} size='small' />}>
+    lChildren={<RoundImage url={url} small />}
+    rChildren={<RoundImage url={url} small />}>
     {name}
   </CardFlex>
 }
