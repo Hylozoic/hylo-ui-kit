@@ -4,12 +4,13 @@
   padding: 0px 40px;
   border-radius: 25px;
   display: inline-block;
-  &.small {
-    padding: 0px 30px;
-    height: 32px;
-    line-height: 32px;
-    font-size: 10pt;
-  }
+}
+
+.small {
+  padding: 0px 30px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 10pt;
 }
 
 .narrow {
@@ -22,7 +23,7 @@
   &:hover, &.hover {
     background-color: lighten($color-caribbean-green, 2%);
   }
-  &:active, &.clicked {
+  &:active, &.active {
     background-color: darken($color-caribbean-green, 2%);
   }
 }
@@ -33,7 +34,7 @@
   &:hover, &.hover {
     background-color: lighten($color-medium-purple, 3%);
   }
-  &:active, &.clicked {
+  &:active, &.active {
     background-color: darken($color-medium-purple, 3%);
   }
 }
@@ -72,6 +73,6 @@
   color: transparent;
 }
 
-.hover, .clicked {
+.hover, .active {
   display: inline-block;
 }

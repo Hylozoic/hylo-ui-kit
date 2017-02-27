@@ -16,5 +16,5 @@ Button.propTypes = {
   hover: bool,
   narrow: bool,
   small: bool,
-  clicked: bool
+  active: bool
 }
