@@ -2,6 +2,8 @@
   background-position: center;
   background-size: cover;
   border-color: $color-rhino;
+  width: calc(#{$space-std} + #{$space-sm});
+  height: calc(#{$space-std} + #{$space-sm});
 }
 
 .overlaps {
@@ -20,9 +22,4 @@
 .medium {
   width: $space-lg;
   height: $space-lg;
-}
-
-.large {
-  width: calc(#{$space-std} + #{$space-sm});
-  height: calc(#{$space-std} + #{$space-sm});
 }

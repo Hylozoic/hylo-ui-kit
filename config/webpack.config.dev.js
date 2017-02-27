@@ -50,7 +50,7 @@ module.exports = {
       }
     ],
     loaders: [
-      // Static resources loader
+      // Static resources
       {
         exclude: [
           /\.html$/,
@@ -66,7 +66,7 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]'
         }
       },
-      // Babel loader
+      // Babel
       {
         test: /\.(js|jsx)$/,
         include: [paths.appNodeModules, paths.appSrc],
@@ -75,12 +75,12 @@ module.exports = {
           cacheDirectory: true
         }
       },
-      // Global SASS Resources
+      // Global SASS resources
       {
         test: /\.(css|scss)$/,
         include: [
-          paths.appSrc + '/css',
-          paths.appSrc + '/hylo-app/css'
+          paths.appSrc + '/css/global.scss',
+          paths.appSrc + '/hylo-app/css/global.scss'
         ],
         loaders: [
           'style?sourceMap',
@@ -94,8 +94,8 @@ module.exports = {
       {
         test: /\.(css|scss)$/,
         exclude: [
-          paths.appSrc + '/css',
-          paths.appSrc + '/hylo-app/css'
+          paths.appSrc + '/css/global.scss',
+          paths.appSrc + '/hylo-app/css/global.scss'
         ],
         loaders: [
           'style?sourceMap',
