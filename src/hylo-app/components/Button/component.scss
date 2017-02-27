@@ -37,16 +37,16 @@
   background-color: $color-medium-purple;
   color: $color-white;
   &.hover {
-    background-color: lighten($color-medium-purple, 2%);
+    background-color: lighten($color-medium-purple, 3%);
   }
   &:hover {
-    background-color: lighten($color-medium-purple, 2%);
+    background-color: lighten($color-medium-purple, 3%);
   }
   &.clicked {
-    background-color: darken($color-medium-purple, 2%);
+    background-color: darken($color-medium-purple, 3%);
   }
   &:active {
-    background-color: darken($color-medium-purple, 2%);
+    background-color: darken($color-medium-purple, 3%);
   }
 }
 
