@@ -32,13 +32,21 @@
 }
 
 .buttonRow--label {
-    display: inline-block;
-    width: 45px;
-    margin-right: 12px;
-    font-size: 10pt;
-    color: $color-rhino-50;
+  display: inline-block;
+  width: 45px;
+  margin-right: 12px;
+  font-size: 10pt;
+  color: $color-rhino-50;
 }
 
 .buttonMargin {
   margin-right: 20px;
+}
+
+.rhinoBackground {
+  display: inline-block;
+  background-color: $color-rhino;
+  padding: 10px;
+  position: relative;
+  left: -10px;
 }

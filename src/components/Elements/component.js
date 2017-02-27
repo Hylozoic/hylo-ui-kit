@@ -42,6 +42,12 @@ export default function Elements (props) {
             <Button label='Button' color='purple' styleName='buttonMargin' active />
             <Button label='Button' color='green-white' styleName='buttonMargin' narrow active />
           </div>
+          <div styleName='buttonRow'>
+            <div styleName='buttonRow--label'>Other</div>
+            <Button label='Button' color='gray' styleName='buttonMargin'/>
+            <Button label='Button' color='gray-blank' styleName='buttonMargin' />
+            <Button label='Button' color='green-white-green-border' styleName='buttonMargin' narrow />
+          </div>
         </div>
         <div>
           <div styleName='element__label'>Buttons / 32px</div>
@@ -56,6 +62,12 @@ export default function Elements (props) {
           <div styleName='smallButtonRow'>
             <Button label='Button' styleName='buttonMargin' active small />
             <Button label='Button' color='purple' styleName='buttonMargin' active small />
+          </div>
+          <div styleName='smallButtonRow'>
+            <Button label='Button' color='gray' styleName='buttonMargin' small />
+            <div styleName='rhinoBackground'>
+              <Button label='Button' color='white' small />
+            </div>
           </div>
         </div>
       </div>

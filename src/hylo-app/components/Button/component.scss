@@ -51,6 +51,26 @@
   }
 }
 
+.green-white-green-border {
+  composes: green-white;
+  border: 1px solid $color-caribbean-green;
+}
+
+.gray {
+  color: $color-alto;
+  border: 1px solid $color-alto;
+}
+
+.white {
+  color: $color-white;
+  border: 1px solid $color-white;
+  background-color: transparent;
+}
+
+.gray-blank {
+  composes: gray;
+  color: transparent;
+}
 
 .hover, .clicked {
   display: inline-block;
