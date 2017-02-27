@@ -19,9 +19,9 @@ export default function Elements (props) {
             <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' small />
           </div>
           <div>
-            <span styleName='image__label'>48px</span>
-            <span styleName='image__label'>36px</span>
-            <span styleName='image__label'>28px</span>
+            <span styleName='image__label'>40px</span>
+            <span styleName='image__label'>32px</span>
+            <span styleName='image__label'>24px</span>
           </div>
         </div>
         <div styleName='buttons__card'>

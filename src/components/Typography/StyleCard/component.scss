@@ -1,18 +1,17 @@
 .card {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: calc((#{$sheet-width} / 2) - #{$space-std} * 6);
-  padding: $space-std 0;
-  margin: 0 $space-std;
+  // LEJ: This calc is mostly just for fun, but this is propertly
+  // the width of the card for a 2 column layout.
+  flex-basis: calc((#{$sheet-width} / 2) - (#{$space-8x-base} * 4) - 1px);
+  padding: $space-8x-base 0;
+  margin: 0 $space-8x-base;
   box-sizing: border-box;
   border-bottom: $section-border-width solid #a0acbb;
-  &:last-child {
+  &:last-child,
+  &--no-bottom-border {
     border-bottom: 0px;
   }
-}
-
-.card--no-bottom-border {
-  border-bottom: 0px;
 }
 
 .name {
@@ -31,5 +30,5 @@
 }
 
 .sample {
-  margin-top: $space-std;
+  margin-top: $space-8x-base;
 }

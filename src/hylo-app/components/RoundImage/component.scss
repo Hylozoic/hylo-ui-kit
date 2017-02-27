@@ -1,25 +1,25 @@
 .image {
   background-position: center;
   background-size: cover;
-  border-color: $color-rhino;
-  width: calc(#{$space-std} + #{$space-sm});
-  height: calc(#{$space-std} + #{$space-sm});
+  border: solid 3px $color-white;
+  width: $space-10x-base;
+  height: $space-10x-base;
 }
 
 .overlaps {
-  margin-left: -15px;
+  margin-left: -$space-4x-base;
 }
 
 .overlaps:first-child {
   margin-left: 0px;
 }
 
-.small {
-  width: calc(#{$space-std} - #{$space-xs});
-  height: calc(#{$space-std} - #{$space-xs});
+.medium {
+  width: $space-8x-base;
+  height: $space-8x-base;
 }
 
-.medium {
-  width: $space-lg;
-  height: $space-lg;
+.small {
+  width: $space-6x-base;
+  height: $space-6x-base;
 }

@@ -1,14 +1,27 @@
-/* Spacing */
-$space-xs: 4px;
-$space-sm: calc(#{$space-xs} * 3);
-$space-std: calc(#{$space-xs} * 8);
-$space-lg: calc(#{$space-xs} * 9);
-$space-xl: calc(#{$space-xs} * 18);
+// Spacing
+$space-base-unit: 0.25rem;
+$space-2x-base: 0.5rem;
+$space-3x-base: 0.75rem;
+$space-4x-base: 1rem;
+$space-5x-base: 1.25rem;
+$space-6x-base: 1.5rem;
+$space-7x-base: 1.75rem;
+$space-8x-base: 2rem;
+$space-9x-base: 2.25rem;
+$space-10x-base: 2.5rem;
+$space-11x-base: 2.75rem;
+$space-12x-base: 3rem;
+$space-18x-base: 4rem;
 
-/* Colors
-   For now standardized on using "Name that Color" naming:
-   http://chir.ag/projects/name-that-color http://chir.ag/projects/ntc/
-*/
+$space-sm: calc(#{$space-base-unit} * 3);
+$space-std: calc(#{$space-base-unit} * 8);
+$space-lg: calc(#{$space-base-unit} * 9);
+$space-xl: calc(#{$space-base-unit} * 10);
+$space-xxl: calc(#{$space-base-unit} * 18);
+
+// Colors
+// For now standardized on using "Name that Color" naming:
+// http://chir.ag/projects/name-that-color http://chir.ag/projects/ntc/
 $color-rhino: #2C4059;
 $color-rhino-80: color($color-rhino a(80%));
 $color-rhino-60: color($color-rhino a(60%));

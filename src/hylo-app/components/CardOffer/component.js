@@ -1,11 +1,11 @@
 import React from 'react'
 import RoundImage from '../RoundImage'
+import cx from 'classnames'
 
 export default function CardOffer ({ post }) {
-  console.log(post)
   return <div className='card'>
     <CardHeader person={post.author} />
-    <CardBlock>
+    <CardBlock className='py-0'>
       <CardBody post={post} />
       <CardTags tags={post.tags} />
     </CardBlock>
@@ -13,14 +13,15 @@ export default function CardOffer ({ post }) {
   </div>
 }
 
-function CardBlock ({ children }) {
-  return <div className='card-block'>{ children }</div>
+function CardBlock ({ children, className }) {
+  className = cx('card-block', className)
+  return <div className={className}>{ children }</div>
 }
 
 function CardHeader ({person: { url, name }}) {
   return <CardFlex
-    lChildren={<RoundImage url={url} small />}
-    rChildren={<RoundImage url={url} small />}>
+    lChildren={<RoundImage url={url} large />}
+    rChildren={<RoundImage url={url} large />}>
     {name}
   </CardFlex>
 }
@@ -48,7 +49,7 @@ function CardFooter ({ votes }) {
     names = names.join(', ')
   }
   const lChildren = votes.slice(0, 3).map(
-    (vote, i) => <RoundImage url={vote.url} overlaps size='small' key={i} />
+    (vote, i) => <RoundImage url={vote.url} medium overlaps key={i} />
   )
   const rChildren = votes.length
   return <CardFlex lChildren={lChildren} rChildren={rChildren}>{names}</CardFlex>
@@ -57,13 +58,14 @@ function CardFooter ({ votes }) {
 function CardTags ({ tags }) {
   return <div>
     {tags.map(
-      (tag, i) => <Tag name={tag} key={i} />
+      (tag, i) => <Tag name={tag} className='mr-1' key={i} />
     )}
   </div>
 }
 
-function Tag ({ name }) {
-  return <div className='btn btn-outline-secondary btn-sm'>
+function Tag ({ name, className }) {
+  className = cx('btn btn-outline-secondary btn-sm', className)
+  return <div className={className}>
     { name }
   </div>
 }

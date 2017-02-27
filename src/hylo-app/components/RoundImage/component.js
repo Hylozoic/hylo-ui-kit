@@ -8,8 +8,9 @@ import cx from 'classnames'
 
 const { string, bool } = React.PropTypes
 
-export default function RoundImage ({ url, small, medium, overlaps, classNameProp: className }) {
+export default function RoundImage ({ url, small, medium, overlaps, className }) {
   let styleName = cx('image', { overlaps, small, medium })
+  // LEJ: Note use of bootstrap utility classes here
   className = cx(className, 'd-inline-block align-top img-thumbnail rounded-circle')
   return <div styleName={styleName}
     className={className}
