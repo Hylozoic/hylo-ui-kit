@@ -2,6 +2,7 @@ import React from 'react'
 import RoundImage from '../RoundImage'
 
 export default function CardOffer ({ post }) {
+  console.log(post)
   return <div className='card'>
     <CardHeader person={post.author} />
     <CardBlock>

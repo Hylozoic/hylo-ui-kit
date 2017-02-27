@@ -38,9 +38,9 @@ export default function Elements (props) {
           </div>
           <div styleName='buttonRow'>
             <div styleName='buttonRow--label'>Clicked</div>
-            <Button label='Button' styleName='buttonMargin' clicked />
-            <Button label='Button' color='purple' styleName='buttonMargin' clicked />
-            <Button label='Button' color='green-white' styleName='buttonMargin' narrow clicked />
+            <Button label='Button' styleName='buttonMargin' active />
+            <Button label='Button' color='purple' styleName='buttonMargin' active />
+            <Button label='Button' color='green-white' styleName='buttonMargin' narrow active />
           </div>
         </div>
         <div>
@@ -54,8 +54,8 @@ export default function Elements (props) {
             <Button label='Button' color='purple' styleName='buttonMargin' hover small />
           </div>
           <div styleName='smallButtonRow'>
-            <Button label='Button' styleName='buttonMargin' clicked small />
-            <Button label='Button' color='purple' styleName='buttonMargin' clicked small />
+            <Button label='Button' styleName='buttonMargin' active small />
+            <Button label='Button' color='purple' styleName='buttonMargin' active small />
           </div>
         </div>
       </div>
