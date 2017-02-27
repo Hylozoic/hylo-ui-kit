@@ -2,7 +2,7 @@ import React from 'react'
 import RoundImage from '../../hylo-app/components/RoundImage'
 import Button from '../../hylo-app/components/Button'
 import PostLabel from '../../hylo-app/components/PostLabel'
-// import SkillLabel from '../../hylo-app/components/SkillLabel'
+import SkillLabel from '../../hylo-app/components/SkillLabel'
 
 const SAMPLE_IMAGE_URL = 'https://d3ngex8q79bk55.cloudfront.net/user/13986/avatar/1444260480878_AxolotlPic.png'
 
@@ -75,7 +75,7 @@ export default function Elements (props) {
       </div>
       <div>
         <div styleName='element__label'>Labels</div>
-        <div className='sheet__flexbox'>
+        <div className='sheet__flexbox mb-5'>
           <div className='sheet__flexbox__item'>
             <PostLabel type='discussion' />
           </div>
@@ -91,14 +91,23 @@ export default function Elements (props) {
           <div className='sheet__flexbox__item'>
             <PostLabel type='request' />
           </div>
-          {/*
-          <SkillLabel label='skill' />
-          <SkillLabel label='skill' active />
-          <div styleName='rhinoSkillBackground'>
+        </div>
+        <div>
+          <div styleName='skillContainer' className='sheet__flexbox__item'>
             <SkillLabel label='skill' />
+          </div>
+          <div styleName='skillContainer' className='sheet__flexbox__item'>
             <SkillLabel label='skill' active />
           </div>
-          */}
+          <div styleName='skillContainer rhinoSkillBackground' className='sheet__flexbox__item'>
+            <SkillLabel label='skill' color='white' />
+          </div>
+          <div styleName='skillContainer rhinoSkillBackground' className='sheet__flexbox__item'>
+            <SkillLabel label='skill' color='white' active />
+          </div>
+          <div className='sheet__flexbox__item'>
+            <span />
+          </div>
         </div>
       </div>
     </div>

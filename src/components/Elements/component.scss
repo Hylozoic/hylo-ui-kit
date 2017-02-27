@@ -57,7 +57,11 @@
 
 .rhinoSkillBackground {
   composes: rhinoBackground;
-  padding: 10px;
-  position: relative;
-  left: -10px;
+}
+
+.skillContainer {
+  display: inline-block;
+  padding: 25px;
+  text-align: center;
+  margin-right: 0px;
 }
