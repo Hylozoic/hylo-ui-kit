@@ -1,6 +1,8 @@
 import React from 'react'
 import RoundImage from '../../hylo-app/components/RoundImage'
 import Button from '../../hylo-app/components/Button'
+import PostLabel from '../../hylo-app/components/PostLabel'
+// import SkillLabel from '../../hylo-app/components/SkillLabel'
 
 const SAMPLE_IMAGE_URL = 'https://d3ngex8q79bk55.cloudfront.net/user/13986/avatar/1444260480878_AxolotlPic.png'
 
@@ -44,7 +46,7 @@ export default function Elements (props) {
           </div>
           <div styleName='buttonRow'>
             <div styleName='buttonRow--label'>Other</div>
-            <Button label='Button' color='gray' styleName='buttonMargin'/>
+            <Button label='Button' color='gray' styleName='buttonMargin' />
             <Button label='Button' color='gray-blank' styleName='buttonMargin' />
             <Button label='Button' color='green-white-green-border' styleName='buttonMargin' narrow />
           </div>
@@ -65,10 +67,38 @@ export default function Elements (props) {
           </div>
           <div styleName='smallButtonRow'>
             <Button label='Button' color='gray' styleName='buttonMargin' small />
-            <div styleName='rhinoBackground'>
+            <div styleName='rhinoButtonBackground'>
               <Button label='Button' color='white' small />
             </div>
           </div>
+        </div>
+      </div>
+      <div>
+        <div styleName='element__label'>Labels</div>
+        <div className='sheet__flexbox'>
+          <div className='sheet__flexbox__item'>
+            <PostLabel type='discussion' />
+          </div>
+          <div className='sheet__flexbox__item'>
+            <PostLabel type='event' />
+          </div>
+          <div className='sheet__flexbox__item'>
+            <PostLabel type='offer' />
+          </div>
+          <div className='sheet__flexbox__item'>
+            <PostLabel type='project' />
+          </div>
+          <div className='sheet__flexbox__item'>
+            <PostLabel type='request' />
+          </div>
+          {/*
+          <SkillLabel label='skill' />
+          <SkillLabel label='skill' active />
+          <div styleName='rhinoSkillBackground'>
+            <SkillLabel label='skill' />
+            <SkillLabel label='skill' active />
+          </div>
+          */}
         </div>
       </div>
     </div>

@@ -46,6 +46,17 @@
 .rhinoBackground {
   display: inline-block;
   background-color: $color-rhino;
+}
+
+.rhinoButtonBackground {
+  composes: rhinoBackground;
+  padding: 10px;
+  position: relative;
+  left: -10px;
+}
+
+.rhinoSkillBackground {
+  composes: rhinoBackground;
   padding: 10px;
   position: relative;
   left: -10px;
