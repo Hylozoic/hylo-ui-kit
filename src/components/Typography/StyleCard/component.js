@@ -10,7 +10,6 @@ const SAMPLE_TEXT_OPTIONS = {
 export default function StyleCard (
   { styleClassName, name, description, sampleKey, sample, children, noBottomBorder, ...props }
 ) {
-  console.log(hyloAppTypographyStyles)
   const sampleTextOptions = SAMPLE_TEXT_OPTIONS
   const sampleText = children || sample || sampleTextOptions[sampleKey]
   let styleName = noBottomBorder ? 'card card--no-bottom-border' : 'card'

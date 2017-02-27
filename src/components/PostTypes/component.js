@@ -30,7 +30,7 @@ export default function PostTypes (props) {
           <CardOffer post={SAMPLE_POST} />
         </div>
         <div className='sheet__flexbox__item'>
-          <CardOffer />
+          <CardOffer post={SAMPLE_POST} />
         </div>
       </div>
     </div>

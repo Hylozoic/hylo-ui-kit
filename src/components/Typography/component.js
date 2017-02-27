@@ -105,7 +105,7 @@ export default function Typography (props) {
             Accent versions of active colors can be used for top bar backgrounds <br />
           </div>
         </div>
-        <ColorSample color='#0DC3A0' colorName='caribbean-green' />
+        <ColorSample color='#0DC39F' colorName='caribbean-green' />
         <ColorSample color='#9883E5' colorName='medium-purple' />
         <ColorSample color='#BB60A8' colorName='fuchsia-pink' />
         <ColorSample color='#40A1DD' colorName='picton-blue' />

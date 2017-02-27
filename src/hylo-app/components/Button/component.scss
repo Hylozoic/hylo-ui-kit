@@ -1,8 +1,8 @@
 .button {
-  padding: 0px 40px;
-  border-radius: 25px;
   height: 40px;
   line-height: 40px;
+  padding: 0px 40px;
+  border-radius: 25px;
   display: inline-block;
   &.small {
     padding: 0px 30px;
@@ -19,16 +19,10 @@
 .green {
   background-color: $color-caribbean-green;
   color: $color-white;
-  &.hover {
+  &:hover, &.hover {
     background-color: lighten($color-caribbean-green, 2%);
   }
-  &:hover {
-    background-color: lighten($color-caribbean-green, 2%);
-  }
-  &.clicked {
-    background-color: darken($color-caribbean-green, 2%);
-  }
-  &:active {
+  &:active, &.clicked {
     background-color: darken($color-caribbean-green, 2%);
   }
 }
@@ -36,16 +30,10 @@
 .purple {
   background-color: $color-medium-purple;
   color: $color-white;
-  &.hover {
+  &:hover, &.hover {
     background-color: lighten($color-medium-purple, 2%);
   }
-  &:hover {
-    background-color: lighten($color-medium-purple, 2%);
-  }
-  &.clicked {
-    background-color: darken($color-medium-purple, 2%);
-  }
-  &:active {
+  &:active, &.clicked {
     background-color: darken($color-medium-purple, 2%);
   }
 }
@@ -53,29 +41,17 @@
 .green-white {
   color: $color-caribbean-green;
   border: 1px solid $color-alto;
-  &.hover {
+  &:hover, &.hover {
     background-color: $color-polar;
     border-color: $color-caribbean-green;
   }
-  &:hover {
-    background-color: $color-polar;
-    border-color: $color-caribbean-green;
-  }
-  &.clicked {
-    background-color: $color-ziggurat;
-    border-color: transparent;
-  }
-  &:active {
+  &:active, &.active {
     background-color: $color-ziggurat;
     border-color: transparent;
   }
 }
 
 
-.hover {
-  display: inline-block;
-}
-
-.clicked {
+.hover, .clicked {
   display: inline-block;
 }
