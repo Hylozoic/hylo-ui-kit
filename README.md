@@ -99,6 +99,7 @@ A living stylesheet derived from the mock-ups for hylo-app.
 ## WIP: Creating new component guidelines
 
 * Create components as:
+
     MyComponent.js
     MyComponent.test.js
     MyComponent.connector.js
