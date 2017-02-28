@@ -7,7 +7,7 @@
 }
 
 .heading {
-  composes: sheet__title from './css/layout.scss';
+  composes: sheet-title from './css/layout.scss';
   margin: 0;
   padding: 0;
 }

@@ -9,8 +9,8 @@ const SAMPLE_IMAGE_URL = 'https://d3ngex8q79bk55.cloudfront.net/user/13986/avata
 export default function Elements (props) {
   return <div>
     <div className='sheet'>
-      <div className='sheet__title'>Elements</div>
-      <div className='sheet__flexbox'>
+      <div className='sheet-title'>Elements</div>
+      <div className='sheet-flexbox'>
         <div>
           <div styleName='elementLabel'>Imagery</div>
           <div styleName='imagesCard'>
@@ -75,37 +75,37 @@ export default function Elements (props) {
       </div>
       <div>
         <div styleName='elementLabel'>Labels</div>
-        <div className='sheet__flexbox mb-5'>
-          <div className='sheet__flexbox__item'>
+        <div className='sheet-flexbox mb-5'>
+          <div className='sheet-flexbox-item'>
             <PostLabel type='discussion' />
           </div>
-          <div className='sheet__flexbox__item'>
+          <div className='sheet-flexbox-item'>
             <PostLabel type='event' />
           </div>
-          <div className='sheet__flexbox__item'>
+          <div className='sheet-flexbox-item'>
             <PostLabel type='offer' />
           </div>
-          <div className='sheet__flexbox__item'>
+          <div className='sheet-flexbox-item'>
             <PostLabel type='project' />
           </div>
-          <div className='sheet__flexbox__item'>
+          <div className='sheet-flexbox-item'>
             <PostLabel type='request' />
           </div>
         </div>
         <div>
-          <div styleName='skillContainer' className='sheet__flexbox__item'>
+          <div styleName='skillContainer' className='sheet-flexbox-item'>
             <SkillLabel label='skill' />
           </div>
-          <div styleName='skillContainer' className='sheet__flexbox__item'>
+          <div styleName='skillContainer' className='sheet-flexbox-item'>
             <SkillLabel label='skill' active />
           </div>
-          <div styleName='skillContainer skillBackground-rhino' className='sheet__flexbox__item'>
+          <div styleName='skillContainer skillBackground-rhino' className='sheet-flexbox-item'>
             <SkillLabel label='skill' color='white' />
           </div>
-          <div styleName='skillContainer skillBackground-rhino' className='sheet__flexbox__item'>
+          <div styleName='skillContainer skillBackground-rhino' className='sheet-flexbox-item'>
             <SkillLabel label='skill' color='white' active />
           </div>
-          <div className='sheet__flexbox__item'>
+          <div className='sheet-flexbox-item'>
             <span />
           </div>
         </div>

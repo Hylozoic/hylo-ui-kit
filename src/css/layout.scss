@@ -7,7 +7,7 @@
   border-radius: $sheet-border-radius;
 }
 
-.sheet__title {
+.sheet-title {
   @include font-bold;
   padding-top: $space-3x-base;
   font-size: 24pt;
@@ -15,23 +15,23 @@
   color: #2C4059;
 }
 
-.sheet__flexbox {
+.sheet-flexbox {
   display: flex;
   flex-flow: row wrap;
-  &__item {
+  &-item {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 100px;
     margin-right: $space-6x-base;
   }
-  &__item:last-child {
+  &-item:last-child {
     margin-right: 0;
   }
 }
 
 .section {
   margin-bottom: $space-12x-base;
-  &__box {
+  &-box {
     display: flex;
     flex-flow: row wrap;
     background-color: #fafbfc;
@@ -43,7 +43,7 @@
   }
 }
 
-.section__title {
+.section-title {
   margin-top: 0px;
   padding-top: 0px;
   margin-bottom: $space-9x-base;

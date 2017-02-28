@@ -24,12 +24,12 @@ const SAMPLE_POST = {
 export default function PostTypes (props) {
   return <div>
     <div className='sheet'>
-      <div className='sheet__title'>Post Types</div>
-      <div className='sheet__flexbox'>
-        <div className='sheet__flexbox__item'>
+      <div className='sheet-title'>Post Types</div>
+      <div className='sheet-flexbox'>
+        <div className='sheet-flexbox-item'>
           <CardOffer post={SAMPLE_POST} />
         </div>
-        <div className='sheet__flexbox__item'>
+        <div className='sheet-flexbox-item'>
           <CardOffer post={SAMPLE_POST} />
         </div>
       </div>

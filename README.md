@@ -1,6 +1,5 @@
 # Hylo UI Kit
 
----
 A living stylesheet derived from the mock-ups for hylo-app.
 
 ## Stylesheet guidelines
@@ -67,7 +66,6 @@ A living stylesheet derived from the mock-ups for hylo-app.
   - in dev "style" tags are created in header to enables easy in-browser editing of CSS
 
 ---
-
 
 ## WIP: Creating new component guidelines
 
