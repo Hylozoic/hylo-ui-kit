@@ -27,9 +27,11 @@ A living stylesheet derived from the mock-ups for hylo-app.
 .myClass {
   &-myThingInThisClass {
     // this results in myClass-myThingInThisClass
+    // which would be applied as styleName='myClass myClass-myThingInThisClass'
   }
   &--red {
     // this results in myClass--red
+    // which would be applied as styleName='myClass myClass-red'
   }
 }
 
