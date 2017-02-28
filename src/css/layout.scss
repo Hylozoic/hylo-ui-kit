@@ -1,4 +1,4 @@
-/* Layout ("sheet") style */
+ // Layout ("sheet") style
 .sheet {
   background-color: $color-white;
   width: $sheet-width;
@@ -43,17 +43,13 @@
   }
 }
 
-/* LEJ: Can't nest and composes from a classed construted through nesting.
-        Look into config or workaround...  */
-
 .section__title {
   margin-top: 0px;
   padding-top: 0px;
   margin-bottom: $space-9x-base;
   color: #2C4059;
   opacity: 0.6;
-}
-
-.section__title--collapsed {
-  margin-bottom: $space-3x-base;
+  &--collapsed {
+    margin-bottom: $space-3x-base;
+  }
 }

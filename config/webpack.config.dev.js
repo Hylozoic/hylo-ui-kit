@@ -99,7 +99,7 @@ module.exports = {
         ],
         loaders: [
           'style?sourceMap',
-          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          'css?modules&importLoaders=3&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
           'postcss',
           'sass?sourceMap',
           'sass-resources'
@@ -122,7 +122,8 @@ module.exports = {
     ]
   },
 
-  // Define global SASS variables in css/globals/variables (these are the only variables we currently use)
+  // Define global SASS variables in css/_variables for preloading by the
+  // sass-resources loader.
   sassResources: [
     paths.appSrc + '/hylo-app/css/_variables.scss',
     paths.appSrc + '/css/_variables.scss'
@@ -130,8 +131,6 @@ module.exports = {
 
   postcss: function () {
     return [
-      // require('postcss-nested'),
-      // require('postcss-import'),
       require('postcss-cssnext')({
         browsers: [
           '>1%',

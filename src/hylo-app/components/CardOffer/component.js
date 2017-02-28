@@ -1,11 +1,14 @@
 import React from 'react'
-import RoundImage from '../RoundImage'
 import cx from 'classnames'
+import RoundImage from '../RoundImage'
+import SkillLabel from '../SkillLabel'
+
+import styles from './component.scss'
 
 export default function CardOffer ({ post }) {
   return <div className='card'>
     <CardHeader person={post.author} />
-    <CardBlock className='py-0'>
+    <CardBlock className='m-0 py-0 px-6'>
       <CardBody post={post} />
       <CardTags tags={post.tags} />
     </CardBlock>
@@ -27,10 +30,10 @@ function CardHeader ({person: { url, name }}) {
 }
 
 function CardFlex ({ lChildren, rChildren, children }) {
-  return <div className='d-flex align-item-center'>
-    <div className='d-flex ml-3 mr-1 my-3'>{lChildren}</div>
-    <div className='w-100 mx-1 my-3'>{children}</div>
-    <div className='ml-1 mr-3 my-3'>{rChildren}</div>
+  return <div className='d-flex align-item-center m-6'>
+    <div className='d-flex mr-1'>{lChildren}</div>
+    <div className='w-100 mx-1'>{children}</div>
+    <div className='ml-1'>{rChildren}</div>
   </div>
 }
 
@@ -58,17 +61,17 @@ function CardFooter ({ votes }) {
 function CardTags ({ tags }) {
   return <div>
     {tags.map(
-      (tag, i) => <Tag name={tag} className='mr-1' key={i} />
+      (tag, i) => <SkillLabel label={tag} className='mr-2' key={i} />
     )}
   </div>
 }
 
-function Tag ({ name, className }) {
-  className = cx('btn btn-outline-secondary btn-sm', className)
-  return <div className={className}>
-    { name }
-  </div>
-}
+// function Tag ({ name, className }) {
+//   className = cx('btn btn-outline-secondary btn-sm tag', styles.tag, className)
+//   return <div className={className}>
+//     { name }
+//   </div>
+// }
 
 // <Card>
 //   <CardHeader>

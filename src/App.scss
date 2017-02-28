@@ -1,14 +1,15 @@
 .nav {
+  composes: sheet from './css/layout.scss';
   background-color: transparent;
-  width: calc(#{$root-width} + 24px);
   padding: $space-3x-base;
   padding-bottom: 0;
-  margin: 0 auto;
+  margin-bottom: -$space-5x-base;
 }
 
 .heading {
-  display: inline;
-  margin-right: $space-8x-base;
+  composes: sheet__title from './css/layout.scss';
+  margin: 0;
+  padding: 0;
 }
 
 .menu {
@@ -16,23 +17,22 @@
   margin: 0;
   padding: 0;
   display: inline;
-}
-
-.menu__item {
-  display: inline;
-  padding: 0 $space-3x-base;
-  border-right: solid 1px white;
-  &:first-child {
-    padding-left: 0px;
-  }
-  &:last-child {
-    border: 0px;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-    &:hover {
-      text-shadow: 1px 1px $color-rhino;
+  &_item {
+    display: inline;
+    padding: 0 $space-3x-base;
+    border-right: solid 1px white;
+    &:first-child {
+      padding-left: 0px;
+    }
+    &:last-child {
+      border: 0px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-shadow: 1px 1px $color-rhino;
+      }
     }
   }
 }

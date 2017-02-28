@@ -1,13 +1,13 @@
-.element__label {
+.elementLabel {
   font-size: 10pt;
   margin-bottom: $space-8x-base;
 }
 
-.images__card {
+.imagesCard {
   margin-right: $space-18x-base;
 }
 
-.image__label {
+.imageLabel {
   font-size: 10pt;
   color: $color-rhino-60;
   margin-right: $space-10x-base;
@@ -18,44 +18,42 @@
   margin-bottom: $space-4x-base;
 }
 
-.buttons__card {
+.buttonsCard {
   margin-right: $space-10x-base;
 }
 
 .buttonRow {
   margin-bottom: $space-4x-base;
-}
-
-.smallButtonRow {
-  margin-bottom: $space-7x-base;
-}
-
-.buttonRow--label {
-  display: inline-block;
-  width: $space-11x-base;
-  margin-right: $space-3x-base;
-  font-size: 10pt;
-  color: $color-rhino-50;
+  &_label {
+    display: inline-block;
+    width: $space-11x-base;
+    margin-right: $space-3x-base;
+    font-size: 10pt;
+    color: $color-rhino-50;
+  }
+  &-small {
+    margin-bottom: $space-7x-base;
+  }
 }
 
 .buttonMargin {
   margin-right: $space-5x-base;
 }
 
-.rhinoBackground {
+.background-rhino {
   display: inline-block;
   background-color: $color-rhino;
 }
 
-.rhinoButtonBackground {
-  composes: rhinoBackground;
+.buttonBackground-rhino {
+  composes: background-rhino;
   padding: 10px;
   position: relative;
   left: -10px;
 }
 
-.rhinoSkillBackground {
-  composes: rhinoBackground;
+.skillBackground-rhino {
+  composes: background-rhino;
 }
 
 .skillContainer {

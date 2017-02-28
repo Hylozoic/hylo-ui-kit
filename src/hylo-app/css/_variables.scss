@@ -1,3 +1,9 @@
+// Hylo App
+
+// DEFINE ONLY VARIABLES IN THIS FILE, NO CSS
+// These variables are globally included and should not
+// be manually manually imported into any SASS file.
+
 // Spacing
 $space-base-unit: 0.25rem;
 $space-2x-base: 0.5rem;
@@ -13,11 +19,11 @@ $space-11x-base: 2.75rem;
 $space-12x-base: 3rem;
 $space-18x-base: 4rem;
 
-$space-sm: calc(#{$space-base-unit} * 3);
-$space-std: calc(#{$space-base-unit} * 8);
-$space-lg: calc(#{$space-base-unit} * 9);
-$space-xl: calc(#{$space-base-unit} * 10);
-$space-xxl: calc(#{$space-base-unit} * 18);
+$space-sm: $space-3x-base;
+$space-std: $space-8x-base;
+$space-lg: $space-9x-base;
+$space-xl: $space-10x-base;
+$space-xxl: $space-18x-base;
 
 // Colors
 // For now standardized on using "Name that Color" naming:
@@ -66,3 +72,11 @@ $color-ziggurat: #BDE0DC;
 @mixin font-bold {
   font-family: 'Circular bold', sans-serif;
 }
+
+// Bootstrap setup
+$font-family-base: 'Circular Book', sans-serif;
+$body-bg: $color-caribbean-green;
+$display4-size: 32px;
+$font-size-h1: 24px;
+$font-size-h2: 18px;
+$font-size-h3: 14px;

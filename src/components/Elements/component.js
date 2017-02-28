@@ -12,69 +12,69 @@ export default function Elements (props) {
       <div className='sheet__title'>Elements</div>
       <div className='sheet__flexbox'>
         <div>
-          <div styleName='element__label'>Imagery</div>
-          <div styleName='images__card'>
+          <div styleName='elementLabel'>Imagery</div>
+          <div styleName='imagesCard'>
             <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' />
             <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' medium />
             <RoundImage url={SAMPLE_IMAGE_URL} styleName='imageMargin' small />
           </div>
           <div>
-            <span styleName='image__label'>40px</span>
-            <span styleName='image__label'>32px</span>
-            <span styleName='image__label'>24px</span>
+            <span styleName='imageLabel'>40px</span>
+            <span styleName='imageLabel'>32px</span>
+            <span styleName='imageLabel'>24px</span>
           </div>
         </div>
-        <div styleName='buttons__card'>
-          <div styleName='element__label'>Buttons / 40px</div>
+        <div styleName='buttonsCard'>
+          <div styleName='elementLabel'>Buttons / 40px</div>
           <div styleName='buttonRow'>
-            <div styleName='buttonRow--label'>Normal</div>
+            <div styleName='buttonRow_label'>Normal</div>
             <Button label='Button' styleName='buttonMargin' />
             <Button label='Button' color='purple' styleName='buttonMargin' />
             <Button label='Button' color='green-white' styleName='buttonMargin' narrow />
           </div>
           <div styleName='buttonRow'>
-            <div styleName='buttonRow--label'>Hover</div>
+            <div styleName='buttonRow_label'>Hover</div>
             <Button label='Button' styleName='buttonMargin' hover />
             <Button label='Button' color='purple' styleName='buttonMargin' hover />
             <Button label='Button' color='green-white' styleName='buttonMargin' narrow hover />
           </div>
           <div styleName='buttonRow'>
-            <div styleName='buttonRow--label'>Clicked</div>
+            <div styleName='buttonRow_label'>Clicked</div>
             <Button label='Button' styleName='buttonMargin' active />
             <Button label='Button' color='purple' styleName='buttonMargin' active />
             <Button label='Button' color='green-white' styleName='buttonMargin' narrow active />
           </div>
           <div styleName='buttonRow'>
-            <div styleName='buttonRow--label'>Other</div>
+            <div styleName='buttonRow_label'>Other</div>
             <Button label='Button' color='gray' styleName='buttonMargin' />
             <Button label='Button' color='gray-blank' styleName='buttonMargin' />
             <Button label='Button' color='green-white-green-border' styleName='buttonMargin' narrow />
           </div>
         </div>
         <div>
-          <div styleName='element__label'>Buttons / 32px</div>
-          <div styleName='smallButtonRow'>
+          <div styleName='elementLabel'>Buttons / 32px</div>
+          <div styleName='buttonRow-small'>
             <Button label='Button' styleName='buttonMargin' small />
             <Button label='Button' color='purple' styleName='buttonMargin' small />
           </div>
-          <div styleName='smallButtonRow'>
+          <div styleName='buttonRow-small'>
             <Button label='Button' styleName='buttonMargin' hover small />
             <Button label='Button' color='purple' styleName='buttonMargin' hover small />
           </div>
-          <div styleName='smallButtonRow'>
+          <div styleName='buttonRow-small'>
             <Button label='Button' styleName='buttonMargin' active small />
             <Button label='Button' color='purple' styleName='buttonMargin' active small />
           </div>
-          <div styleName='smallButtonRow'>
+          <div styleName='buttonRow-small'>
             <Button label='Button' color='gray' styleName='buttonMargin' small />
-            <div styleName='rhinoButtonBackground'>
+            <div styleName='buttonBackground-rhino'>
               <Button label='Button' color='white' small />
             </div>
           </div>
         </div>
       </div>
       <div>
-        <div styleName='element__label'>Labels</div>
+        <div styleName='elementLabel'>Labels</div>
         <div className='sheet__flexbox mb-5'>
           <div className='sheet__flexbox__item'>
             <PostLabel type='discussion' />
@@ -99,10 +99,10 @@ export default function Elements (props) {
           <div styleName='skillContainer' className='sheet__flexbox__item'>
             <SkillLabel label='skill' active />
           </div>
-          <div styleName='skillContainer rhinoSkillBackground' className='sheet__flexbox__item'>
+          <div styleName='skillContainer skillBackground-rhino' className='sheet__flexbox__item'>
             <SkillLabel label='skill' color='white' />
           </div>
-          <div styleName='skillContainer rhinoSkillBackground' className='sheet__flexbox__item'>
+          <div styleName='skillContainer skillBackground-rhino' className='sheet__flexbox__item'>
             <SkillLabel label='skill' color='white' active />
           </div>
           <div className='sheet__flexbox__item'>

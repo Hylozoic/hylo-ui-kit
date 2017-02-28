@@ -13,13 +13,13 @@ class App extends Component {
     return (
       (
         <div>
-          <div className='sheet' styleName='nav'>
-            <div className='sheet__title' styleName='heading'>hylo-ui-kit</div>
+          <div styleName='nav' className='d-flex flex-row justify-content-between align-items-center'>
             <ul styleName='menu'>
-              <li styleName='menu__item'><Link to='/typography'>Typography</Link></li>
-              <li styleName='menu__item'><Link to='/elements'>Elements</Link></li>
-              <li styleName='menu__item'><Link to='/post-types'>Post Types</Link></li>
+              <li styleName='menu_item'><Link to='/typography'>Typography</Link></li>
+              <li styleName='menu_item'><Link to='/elements'>Elements</Link></li>
+              <li styleName='menu_item'><Link to='/post-types'>Post Types</Link></li>
             </ul>
+            <div styleName='heading'>hylo-ui-kit</div>
           </div>
           {this.props.children}
         </div>

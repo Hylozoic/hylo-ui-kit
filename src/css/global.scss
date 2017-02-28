@@ -1,3 +1,5 @@
+// Inherit pretty much everything from Hylo App
+@import '../hylo-app/css/global.scss';
+
 @import './layout.scss';
 @import './typography.scss';
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
