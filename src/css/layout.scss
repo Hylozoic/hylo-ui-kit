@@ -5,14 +5,13 @@
   margin: $sheet-vertical-margin auto;
   padding: $space-18x-base;
   border-radius: $sheet-border-radius;
-}
-
-.sheet-title {
-  @include font-bold;
-  padding-top: $space-3x-base;
-  font-size: 24pt;
-  margin-bottom: $space-18x-base;
-  color: #2C4059;
+  &-title {
+    @include font-bold;
+    padding-top: $space-3x-base;
+    font-size: 24pt;
+    margin-bottom: $space-18x-base;
+    color: #2C4059;
+  }
 }
 
 .sheet-flexbox {
@@ -31,6 +30,16 @@
 
 .section {
   margin-bottom: $space-12x-base;
+  &-title {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: $space-9x-base;
+    color: #2C4059;
+    opacity: 0.6;
+    &--collapsed {
+      margin-bottom: $space-3x-base;
+    }
+  }
   &-box {
     display: flex;
     flex-flow: row wrap;
@@ -40,16 +49,5 @@
   }
   &:nth-last-child(1) {
     margin-bottom: 0;
-  }
-}
-
-.section-title {
-  margin-top: 0px;
-  padding-top: 0px;
-  margin-bottom: $space-9x-base;
-  color: #2C4059;
-  opacity: 0.6;
-  &--collapsed {
-    margin-bottom: $space-3x-base;
   }
 }

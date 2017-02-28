@@ -9,10 +9,29 @@ A living stylesheet derived from the mock-ups for hylo-app.
   ````myBlock-myElement—-myModifier````
 * Start local: All new CSS probably starts in a module and is later extracted to globals. Learn about CSS Module "composition" ("composes: ...") and apply this where appropriate.
 
-
 * Sizing and spacing: Use the defined REM-bases spacing units for all margins, padding, height and width attributes. See ````src/css/_variables.scss```` and ````src/hylo-app/css/_variables.scss````. _If it's a size (2px, 1rem, etc), it should probably be a variable reference or soon to become one._
 
 * Know the variables: New variables or mixins are added within ````src/css/_variables.scss````. We will break this into smaller files if need be at some point for clarity, but for now let's accumulate them here. Be very thoughtful about any spacing/sizing variables and try and work with what has been set up already, we're trying to catalyze as simple and consistent of system as possible.
+
+* Optionally use SASS nesting for convienance and clarity when constructing proper BEM'like naming of classes, but generally don't nest actual selectors:
+
+````
+// Good
+.myClass {
+  &-myThingInThisClass {
+    // this results in myClass-myThingInThisClass
+  }
+  &--red {
+    // this results in myClass--red
+  }
+}
+
+// Bad:
+.myClass {
+  &.myThingInThisClass {}
+  &.red {}
+}
+````
 
 ##### ...and also:
 * Bootstrap Layout: We're planning to use Bootstrap Layout and Grid classes for the overarching site layout to ensure the best practice and most versatile responsive layout options:
