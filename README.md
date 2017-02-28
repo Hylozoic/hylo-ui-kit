@@ -1,20 +1,66 @@
+# Hylo UI Kit
 
-## Webpack CSS Loaders Explanation
-* **sass-resources** makes SASS variables from designated files (see "sassResources" key in webpack config) available
-* **sass** complies SASS files
-* **postcss** does all the post css things ("postcss" in webpack config)
-* **css** loader resolves paths in CSS and adds assets as dependencies.
-* **style** loader turns CSS either into a file or a style tag:
+---
+A living stylesheet derived from the mock-ups for hylo-app.
+
+## Stylesheet guidelines
+
+* CSS selector naming: use this camelCase modified [BEM](http://getbem.com) style, strict in anything global or shared (so anything kept in css/*), in CSS modules it can be loose but it is strongly advised to stay with the convention there too:
+
+  ````myBlock-myElement—-myModifier````
+* Start local: All new CSS probably starts in a module and is later extracted to globals. Learn about CSS Module "composition" ("composes: ...") and apply this where appropriate.
+
+
+* Sizing and spacing: Use the defined REM-bases spacing units for all margins, padding, height and width attributes. See ````src/css/_variables.scss```` and ````src/hylo-app/css/_variables.scss````. _If it's a size (2px, 1rem, etc), it should probably be a variable reference or soon to become one._
+
+* Know variables: New variables or mixins are added within ````src/css/_variables.scss````. We will break this into smaller files if need be at some point for clarity, but for now let's accumulate them here. Be very thoughtful about any spacing/sizing variables and try and work with what has been set up already, we're trying to catalyze as simple and consistent of system as possible.
+
+## Our CSS "Stack"
+
+- [React CSS Modules](https://github.com/gajus/react-css-modules)
+- [SASS](http://sass-lang.com/) used for all variables and mixins at this stage (it is required for Bootstrap 4 either way)
+- [Bootstrap v4.0 alpha 6 (final alpha release)](https://v4-alpha.getbootstrap.com) configured to match our spacing requirements and to include only the following modules:
+  - Core variables and mixins
+    - variables
+    - mixins
+  - Reset and dependencies
+    - normalize
+    - print
+  - Core CSS
+    - reboot
+    - type
+    - images
+    - code
+    - grid
+    - tables
+    - forms
+    - buttons
+  - Components (TBD)
+    - card (currently used in OfferCard experiment)
+  - Utility classes
+    - utilities
+- [PostCSS](https://github.com/postcss/postcss) there are many things we can do with PostCSS but currently we're only using it to plug-in CSSNext which gives access to all actual and pending CSS 3 and 4 spec features:
+  - [postcss-cssnext](http://cssnext.io/)
+
+---
+
+## Webpack
+
+** NOTE: configuration for production build ````config/webpack.config.prod.js```` is currently out of date
+
+#### CSS Loaders Explanation (just FYI)
+* **sass-resources** makes SASS variables from designated files available. Currently ````src/css/_variables.scss```` and ````src/css/hylo-app/_variables.scss```` (see "sassResources" in webpack config)
+* **sass** compiles CSS from SASS files
+* **postcss** does all the post css things (see "postcss" in webpack config)
+* **css** resolves paths in CSS and adds assets as dependencies
+* **style** turns CSS either into a file or a style tag:
   - in prod, a single bundle.css file is generated
   - in dev "style" tags are created in header to enables easy in-browser editing of CSS
 
---- 
+---
 
-# Hylo UI Kit
 
-A living stylesheet derived from the mock-ups for hylo-app.
-
-## IGNORE - WIP: Component rules
+## WIP: Creating new component guidelines
 
 * Create components as:
     MyComponent.js
@@ -41,60 +87,6 @@ A living stylesheet derived from the mock-ups for hylo-app.
     MyComponent/MyComponent.css
     MyComponent/index.js
 
-
 * Use a pod if:
   * The component is Redux connected (for clear separation and testability of connection related functions found)
   * The component has child components with their own stylesheets
-
-
-
-## Stylesheet rules (LEJ: draft)
-
-* Create a component pod directory with a styles.css file, in that file @import in any "global" stylesheets needed (i.e. layout.css) and define local styles.
-
-* CSS naming: use [BEM](http://getbem.com) style (e.g. ````sheet__title—blinking````) for anything in src/css/*.css, otherwise CamelCase for any styles defined on the component.
-
-* For now don't create anything in src/css/* nor add any styles to those stylesheets, use CSS modules "composes" using the global style you'd like to modifiy in your local component. We will routinely review all stylesheets and any composures in particulary to look for global extractions.
-
-* Use defined font-property sets, colors and spacing. Use CSS calc() to work from defined spacing units whenever possible. In routine reviews "hard-coded" values will be reviewed for correction or abstraction to the theme layer.
-
-* Use [CSS spec custom property values](https://github.com/pascalduez/postcss-apply) for variables:
-
-````
-/* definition (in src/css/variables.css) */
-
-root {
-  --sheet-width: 1156px;
-}
-
-
-/* in use */
-
-.mySheet {
-  width: var(—sheet-width);
-}
-````
-
-https://en.bem.info/methodology/faq/#why-should-i-avoid-using-nested-selectors
-https://en.bem.info/methodology/naming-convention/
-
-Use this BEM naming style for all styles (including within a component):
-
-    ”Sans underscore“ style
-    blockName-elemName--modName--modVal
-
-    Names are written in CamelCase.
-    An element name is separated from a block name by a single hyphen (-).
-    Modifiers are delimited by double hyphens (--).
-    The value of a modifier is separated from its name by a double hyphen (--).
-    Important! Double hyphen within the comment (--) is perceived as part of the comment and therefore its presence lead to error during document validation. HTML5 Specification
-
-
-## PostCSS Stack
-
-PostCSS Atom I recommend the [language-postcss plugin](https://atom.io/packages/language-postcss) to get
-- [React CSS Modules](https://github.com/gajus/react-css-modules)
-- [PostCSS](https://github.com/postcss/postcss)
-  - [postcss-import](https://github.com/postcss/postcss-import)
-  - [postcss-nested](https://github.com/postcss/postcss-nested)
-  - [postcss-cssnext](http://cssnext.io/)
