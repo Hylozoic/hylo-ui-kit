@@ -9,13 +9,13 @@
   width: 95px;
   height: 95px;
   border-radius: 50%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .label {
   font-size: 14px;
-  position: relative;
-  top: 40px;
 }
 
 .tail-section {
