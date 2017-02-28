@@ -13,7 +13,16 @@ A living stylesheet derived from the mock-ups for hylo-app.
 
 * Sizing and spacing: Use the defined REM-bases spacing units for all margins, padding, height and width attributes. See ````src/css/_variables.scss```` and ````src/hylo-app/css/_variables.scss````. _If it's a size (2px, 1rem, etc), it should probably be a variable reference or soon to become one._
 
-* Know variables: New variables or mixins are added within ````src/css/_variables.scss````. We will break this into smaller files if need be at some point for clarity, but for now let's accumulate them here. Be very thoughtful about any spacing/sizing variables and try and work with what has been set up already, we're trying to catalyze as simple and consistent of system as possible.
+* Know the variables: New variables or mixins are added within ````src/css/_variables.scss````. We will break this into smaller files if need be at some point for clarity, but for now let's accumulate them here. Be very thoughtful about any spacing/sizing variables and try and work with what has been set up already, we're trying to catalyze as simple and consistent of system as possible.
+
+##### ...and also:
+* Bootstrap Layout: We're planning to use Bootstrap Layout and Grid classes for the overarching site layout to ensure the best practice and most versatile responsive layout options:
+[Bootstrap Layout](http://v4-alpha.getbootstrap.com/layout/grid)
+
+* Bootstrap Flexbox: Consider utilizing Bootstrap Flexbox utility classes for the sake of simplicity and standardization of our application of Flexbox: [Bootstrap Flexbox utilities](https://v4-alpha.getbootstrap.com/utilities/flexbox/)
+
+* Bootstrap Spacing: Get familiar with and consider using Bootstrap Spacing utilities for at least an initial pass when building a component. The Bootstrap spacing units are configured to map to our base unit of 0.25rem. These can be pretty helpful as at least an intermediate way of layout out a component:
+[Bootstrap 4 Spacing utilities](https://v4-alpha.getbootstrap.com/utilities/spacing)
 
 ## Our CSS "Stack"
 
