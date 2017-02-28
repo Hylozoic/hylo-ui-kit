@@ -15,15 +15,15 @@ export default function ColorSample ({ color, colorName, opacity = 1, textColor 
     opacity: borderColor ? 1 : opacity
   }
 
-  return <div styleName='color-sample'>
+  return <div styleName='colorSample'>
     <div styleName='circle' style={circleStyle}>
       <div styleName='label' style={{color: textColor}}>
         {colorLabel}
       </div>
     </div>
-    {description && <div styleName='tail-section'>
+    {description && <div styleName='tailSection'>
       <div styleName='tail' style={tailStyle} />
-      <div styleName='small-circle' style={tailStyle} />
+      <div styleName='smallCircle' style={tailStyle} />
       <div styleName='description'>{description}</div>
     </div>}
   </div>
