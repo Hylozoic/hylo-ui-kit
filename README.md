@@ -17,7 +17,7 @@ A living stylesheet derived from the mock-ups for hylo-app.
 * Optionally use SASS nesting for convienance and clarity when constructing proper BEM'like naming of classes, but generally don't nest actual selectors:
 
 ````
-// Good
+// Good:
 .myClass {
   &-myThingInThisClass {
     // this results in myClass-myThingInThisClass
