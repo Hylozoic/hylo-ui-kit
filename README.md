@@ -4,14 +4,15 @@ A living stylesheet derived from the mock-ups for hylo-app.
 
 ## Stylesheet guidelines
 
-* CSS selector naming: use this camelCase modified [BEM](http://getbem.com) style, strict in anything global or shared (so anything kept in css/*), in CSS modules it can be loose but it is strongly advised to stay with the convention there too:
+* CSS selector naming: use this camelCase modified [BEM](http://getbem.com) style, strict in anything global or shared (so anything kept in css), in CSS modules it can be loose but it is strongly advised to stay with the convention there too:
 
-  ````myBlock-myElement—-myModifier````
+  ``myBlock-myElement—-myModifier``
+
 * Start local: All new CSS probably starts in a module and is later extracted to globals. Learn about CSS Module "composition" ("composes: ...") and apply this where appropriate.
 
-* Sizing and spacing: Use the defined REM-bases spacing units for all margins, padding, height and width attributes. See ````src/css/_variables.scss```` and ````src/hylo-app/css/_variables.scss````. _If it's a size (2px, 1rem, etc), it should probably be a variable reference or soon to become one._
+* Sizing and spacing: Use the defined REM-bases spacing units for all margins, padding, height and width attributes. See ``src/css/_variables.scss`` and ``src/hylo-app/css/_variables.scss``. _If it's a size (2px, 1rem, etc), it should probably be a variable reference or soon to become one._
 
-* Know the variables: New variables or mixins are added within ````src/css/_variables.scss````. We will break this into smaller files if need be at some point for clarity, but for now let's accumulate them here. Be very thoughtful about any spacing/sizing variables and try and work with what has been set up already, we're trying to catalyze as simple and consistent of system as possible.
+* Know the variables: New variables or mixins are added within ``src/css/_variables.scss``. We will break this into smaller files if need be at some point for clarity, but for now let's accumulate them here. Be very thoughtful about any spacing/sizing variables and try and work with what has been set up already, we're trying to catalyze as simple and consistent of system as possible.
 
 * Optionally use SASS nesting for convienance and clarity when constructing proper BEM'like naming of classes, but generally don't nest actual selectors:
 
@@ -73,10 +74,10 @@ A living stylesheet derived from the mock-ups for hylo-app.
 
 ## Webpack
 
-** NOTE: configuration for production build ````config/webpack.config.prod.js```` is currently out of date
+** NOTE: configuration for production build ``config/webpack.config.prod.js`` is currently out of date
 
 #### CSS Loaders Explanation (just FYI)
-* **sass-resources** makes SASS variables from designated files available. Currently ````src/css/_variables.scss```` and ````src/css/hylo-app/_variables.scss```` (see "sassResources" in webpack config)
+* **sass-resources** makes SASS variables from designated files available. Currently ``src/css/_variables.scss`` and ``src/css/hylo-app/_variables.scss`` (see "sassResources" in webpack config)
 * **sass** compiles CSS from SASS files
 * **postcss** does all the post css things (see "postcss" in webpack config)
 * **css** resolves paths in CSS and adds assets as dependencies
