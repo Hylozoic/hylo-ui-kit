@@ -2,6 +2,12 @@
 
 A living stylesheet derived from the mock-ups for hylo-app.
 
+## What you need to know
+
+* We are using React CSS Modules, optional global styles, SASS and Bootstrap as our basic CSS "stack" (see below for more detail)
+* Look at the components in the "pod" pattern in this project to see examples of how to apply a React CSS Module stylesheet to a component
+* Apply module styles using styleName ``<div styleName='myStyle'></div>`` and global and Bootstrap styles to className (as always)
+
 ## Stylesheet guidelines
 
 * CSS selector naming: use this camelCase modified [BEM](http://getbem.com) style, strict in anything global or shared (so anything kept in css), in CSS modules it can be loose but it is strongly advised to stay with the convention there too:
@@ -35,6 +41,7 @@ A living stylesheet derived from the mock-ups for hylo-app.
 ````
 
 ##### ...and also:
+
 * Bootstrap Layout: We're planning to use Bootstrap Layout and Grid classes for the overarching site layout to ensure the best practice and most versatile responsive layout options:
 [Bootstrap Layout](http://v4-alpha.getbootstrap.com/layout/grid)
 
